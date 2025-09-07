@@ -63,7 +63,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
           {product.category !== 'Floor Wiper' &&
             product.Packaging_Size && (
-              <span className="text-xs lg:text-sm text-gray-600 bg-green-60 px-2 py-1 rounded-md font-medium">
+              <span className="text-xs lg:text-sm text-gray-600 bg-green-80 px-2 py-1 rounded-md font-medium">
                 {product.Packaging_Size}
               </span>
             )}

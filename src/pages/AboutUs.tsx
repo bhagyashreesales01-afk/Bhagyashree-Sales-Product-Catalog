@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
             >
               About Bhagyashree Sales
             </h1>
-            <p className="text-blue-100 text-sm lg:text-lg">Your trusted partner for quality cleaning solutions</p>
+            <p className="text-blue-100 text-sm lg:text-lg">Delivering trusted cleaning and household essentials since 2013</p>
           </div>
 
           {/* Content */}
@@ -40,14 +40,16 @@ const AboutUs: React.FC = () => {
                 <h2 className="text-lg lg:text-xl font-semibold text-gray-900">Our Story</h2>
               </div>
               <p className="text-sm lg:text-base text-gray-600 leading-relaxed mb-4">
-                Welcome to Bhagyashree Sales, your trusted partner for high-quality cleaning and household products. 
-                Located in Akurdi, Pune, Maharashtra, we have been serving customers with premium cleaning solutions 
-                that make your home and workplace spotless and hygienic.
+                Established in 2013, Bhagyashree Sales has steadily built a well-recognized name as a trusted 
+                Trader, Wholesaler, and Distributor of premium cleaning and household products. Over the years, 
+                we have developed strong relationships with both our suppliers and customers, ensuring that every 
+                product we deliver reflects our commitment to quality and reliability.
               </p>
               <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
-                Our extensive product range includes floor cleaners, dish cleaners, naphthalene balls, floor wipers, 
-                and cotton mops from renowned brands like Tiger. We are committed to providing products that deliver 
-                exceptional cleaning performance while being safe for your family and environment.
+                From floor cleaners and boric acid powder to floor wipers, naphthalene balls, decorative candles, 
+                and dish wash cleaners, we provide a diverse range of products to meet the everyday needs of homes 
+                and businesses alike. Our dedication to excellence has helped us earn the trust of our clients across 
+                Maharashtra and beyond.
               </p>
             </div>
 
@@ -61,8 +63,9 @@ const AboutUs: React.FC = () => {
                   <h3 className="text-lg lg:text-xl font-semibold text-gray-900">Our Mission</h3>
                 </div>
                 <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
-                  To provide high-quality, affordable cleaning solutions that help maintain hygiene and cleanliness 
-                  in homes and workplaces across Maharashtra and beyond.
+                  Our mission is to deliver high-quality and affordable cleaning solutions that not only keep homes 
+                  and workplaces spotless but also create a healthier and more hygienic environment for everyone. 
+                  We aim to be the go-to supplier for customers who value reliability, quality, and long-term trust.
                 </p>
               </div>
 
@@ -76,19 +79,19 @@ const AboutUs: React.FC = () => {
                 <ul className="text-sm lg:text-base text-gray-600 space-y-2">
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Quality products from trusted brands
+                    Commitment to quality products and reliable service
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Competitive and fair pricing
+                    Building long-term trust with customers and partners
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Exceptional customer service
+                    Offering fair pricing without compromising on standards
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
-                    Environmental responsibility
+                    Responsibility towards community and environment
                   </li>
                 </ul>
               </div>
@@ -100,27 +103,27 @@ const AboutUs: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-4">
                 <div className="bg-blue-50 p-3 lg:p-4 rounded-lg">
                   <h4 className="font-semibold text-blue-900 mb-2 text-sm lg:text-base">Floor Cleaners</h4>
-                  <p className="text-xs lg:text-sm text-blue-700">Premium concentrated cleaners for all floor types</p>
+                  <p className="text-xs lg:text-sm text-blue-700">Effective and concentrated formulas for sparkling floors</p>
                 </div>
                 <div className="bg-green-50 p-3 lg:p-4 rounded-lg">
-                  <h4 className="font-semibold text-green-900 mb-2 text-sm lg:text-base">Dish Cleaners</h4>
-                  <p className="text-xs lg:text-sm text-green-700">Effective dishwashing solutions for spotless utensils</p>
+                  <h4 className="font-semibold text-green-900 mb-2 text-sm lg:text-base">Boric Acid Powder</h4>
+                  <p className="text-xs lg:text-sm text-green-700">Versatile solution for household cleaning and pest control</p>
                 </div>
                 <div className="bg-purple-50 p-3 lg:p-4 rounded-lg">
                   <h4 className="font-semibold text-purple-900 mb-2 text-sm lg:text-base">Naphthalene Balls</h4>
-                  <p className="text-xs lg:text-sm text-purple-700">Protection against insects and moths</p>
+                  <p className="text-xs lg:text-sm text-purple-700">Long-lasting protection against insects and moths</p>
                 </div>
                 <div className="bg-orange-50 p-3 lg:p-4 rounded-lg">
                   <h4 className="font-semibold text-orange-900 mb-2 text-sm lg:text-base">Floor Wipers</h4>
-                  <p className="text-xs lg:text-sm text-orange-700">Durable cleaning tools for efficient floor maintenance</p>
+                  <p className="text-xs lg:text-sm text-orange-700">Durable and efficient cleaning tools for everyday use</p>
                 </div>
                 <div className="bg-teal-50 p-3 lg:p-4 rounded-lg">
-                  <h4 className="font-semibold text-teal-900 mb-2 text-sm lg:text-base">Cotton Mops</h4>
-                  <p className="text-xs lg:text-sm text-teal-700">High-quality mops for thorough cleaning</p>
+                  <h4 className="font-semibold text-teal-900 mb-2 text-sm lg:text-base">Dish Wash Cleaners</h4>
+                  <p className="text-xs lg:text-sm text-teal-700">Powerful cleaners for spotless and grease-free utensils</p>
                 </div>
                 <div className="bg-red-50 p-3 lg:p-4 rounded-lg">
-                  <h4 className="font-semibold text-red-900 mb-2 text-sm lg:text-base">Branded Products</h4>
-                  <p className="text-xs lg:text-sm text-red-700">Trusted brands like Tiger for reliable quality</p>
+                  <h4 className="font-semibold text-red-900 mb-2 text-sm lg:text-base">Decorative Candles</h4>
+                  <p className="text-xs lg:text-sm text-red-700">Elegant candles to brighten and beautify your spaces</p>
                 </div>
               </div>
             </div>
@@ -156,8 +159,9 @@ const AboutUs: React.FC = () => {
             {/* Commitment Statement */}
             <div className="mt-6 lg:mt-8 text-center">
               <p className="text-sm lg:text-lg text-gray-700 font-medium italic">
-                "At Bhagyashree Sales, customer satisfaction is our top priority. We ensure competitive pricing, 
-                reliable quality, and prompt service to meet all your cleaning needs."
+                "At Bhagyashree Sales, we believe in delivering products that bring together quality, affordability, 
+                and trust. Since 2013, our focus has remained the same: to serve our customers with integrity, 
+                consistency, and care."
               </p>
             </div>
           </div>

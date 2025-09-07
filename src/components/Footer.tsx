@@ -8,7 +8,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-2">Address</h4>
             <p className="text-sm">
               Bhagyashree Sales<br />
-              Akurdi, Pune, Maharashtra
+              Flat No 305, Sr No 36/1/A, Good Earth Apat, Akurdi, Pune-411035,          Maharashtra, India
             </p>
           </div>
 

@@ -138,6 +138,15 @@ const Header: React.FC<HeaderProps> = ({ searchTerm = '', onSearchChange }) => {
                   <span className="font-medium">About Us</span>
                 </Link>
                 
+                <Link
+                  to="/about"
+                  onClick={closeMobileMenu}
+                  className="flex items-center gap-3 px-3 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                >
+                  <Info className="w-5 h-5" />
+                  <span className="font-medium">About Us</span>
+                </Link>
+                
                 <button
                   onClick={handleContactClick}
                   className="flex items-center gap-3 px-3 py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"

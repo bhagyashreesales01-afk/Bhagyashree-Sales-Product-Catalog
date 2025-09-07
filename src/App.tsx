@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import Header from './components/Header';
+import AboutUs from './pages/AboutUs';
 import { Product } from '../src/types/Product';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage products={products} globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
         <Route path="/product/:id" element={<ProductDetail products={products} />} />
+        <Route path="/about" element={<AboutUs />} />
       </Routes>
 
       <div id="footer">

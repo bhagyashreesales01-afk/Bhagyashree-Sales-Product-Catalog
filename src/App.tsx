@@ -1,37 +1,52 @@
 import { useState, useMemo } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Package, ArrowLeft } from 'lucide-react';
+import LoadingScreen from './components/LoadingScreen';
+import { useImagePreloader } from './hooks/useImagePreloader';
 import CategoryGrid from './components/CategoryGrid';
 import productsData from './data/products.json';
 import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import Header from './components/Header';
-import AboutUs from './pages/AboutUs';
 import { Product } from '../src/types/Product';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   const products: Product[] = productsData.map(p => ({
-  ...p,
-  available: p.available ?? false,
-  price: p.price ?? 'N/A',
-}));
+    ...p,
+    available: p.available ?? false,
+    price: p.price ?? 'N/A',
+  }));
 
   const [globalSearchTerm, setGlobalSearchTerm] = useState('');
+  
+  // Use image preloader hook
+  const { isLoading } = useImagePreloader({ 
+    products, 
+    minLoadingTime: 3500 // 3.5 seconds
+  });
+
+  // Show loading screen while preloading
+  if (isLoading) {
+    return <LoadingScreen />;
+  }
+
   return (
     <div className="min-h-screen bg-[#10707A]">
       <Header searchTerm={globalSearchTerm} onSearchChange={setGlobalSearchTerm} />
-<div className="bg-[#E8F9FF] min-h-screen">
-      <Routes>
-        <Route path="/" element={<HomePage products={products} globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
-        <Route path="/product/:id" element={<ProductDetail products={products} />} />
-        <Route path="/about" element={<AboutUs />} />
-      </Routes>
 
-      <div id="footer">
-        <Footer />
+      <div className="bg-[#E8F9FF] min-h-screen">
+        <Routes>
+          <Route path="/" element={<HomePage products={products} globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
+          <Route path="/product/:id" element={<ProductDetail products={products} />} />
+          <Route path="/about" element={<AboutUs />} />
+        </Routes>
+
+        <div id="footer">
+          <Footer />
+        </div>
       </div>
-    </div>
     </div>
   );
 }

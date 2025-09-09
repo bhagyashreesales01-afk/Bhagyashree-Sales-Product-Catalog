@@ -563,23 +563,193 @@
     ]
   },
   {
+    "id": 71,
+    "name": "7inch White Rajdeep Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "Packaging_Size": "7 inch",
+    "pack_contain": "12 piece",
+    "MRP": "100",
+    "price": "100",
+    "Selling rate": "95",
+    "shelf_life": "",
+    "Usage/Application": "Decoration",
+    "features": [
+      "7 inch White Rajdeep Candles"
+    ],
+    "grade_standard": "",
+    "Packaging_Type": "",
+    "images": ["/assets/products/candles/7inch-white-rajdeep-candles-500x500.webp","/assets/products/candles/7inch-white-rajdeep-candles-500x500 (2).webp","/assets/products/candles/7inch-white-rajdeep-candles-500x500 (1).webp"]
+  },
+  {
+    "id": 72,
+    "name": "6inch Colorful Rajdeep Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "Packaging_Size": "6 inch",
+    "pack_contain": "12 piece",
+    "MRP": "90",
+    "price": "90",
+    "Selling rate": "85",
+    "shelf_life": "",
+    "Usage/Application": "Decoration",
+    "features": [
+      "6 inch Colorful Rajdeep Candles"
+    ],
+    "grade_standard": "",
+    "Packaging_Type": "",
+    "images": ["/assets/products/candles/6inch-colorful-rajdeep-candles-500x500.webp","/assets/products/candles/1697625656586-500x500.webp"]
+  },
+  {
+    "id": 73,
+    "name": "4inch White Rajdeep Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "Packaging_Size": "4 inch",
+    "pack_contain": "10 piece",
+    "MRP": "38",
+    "price": "38",
+    "Selling rate": "35",
+    "shelf_life": "",
+    "Usage/Application": "Decoration, Festival",
+    "features": [
+      "4 inch White Rajdeep Candles"
+    ],
+    "grade_standard": "",
+    "Packaging_Type": "Box",
+    "images": ["/assets/products/candles/4inch-white-rajdeep-candles-500x500.jpg",
+  "/assets/products/candles/4inch-white-rajdeep-candles-500x500 (2).webp","/assets/products/candles/4inch-white-rajdeep-candles-500x500 (1).webp"]
+  },
+  {
+    "id": 74,
+    "name": "5inch White Rajdeep Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "Packaging_Size": "5 inch",
+    "pack_contain": "30 piece",
+    "MRP": "38",
+    "price": "38",
+    "Selling rate": "35",
+    "shelf_life": "",
+    "Usage/Application": "Festival, Decoration",
+    "features": [
+      "5 inch White Rajdeep Candles"
+    ],
+    "grade_standard": "",
+    "Packaging_Type": "Box",
+    "images": ["/assets/products/candles/5inch-white-rajdeep-candles-500x500.webp","/assets/products/candles/5inch-white-rajdeep-candles-500x500 (1).webp","/assets/products/candles/5inch-white-rajdeep-candles-500x500 (2).webp"]
+  },
+  {
     "id": 101,
     "name": "20Gm Sarvodaya Boric Acid Powder",
     "category": "Other Essentials",
     "form": "Powder",
-    "available":true,
-    "brand":"Sarvodaya",
-    "Packaging_Size":"20gm",
-    "pack_contain":"12 piece",
-    "MRP":"300",
-    "price":"300",
-    "Selling rate":"290",
-    "shelf_life":"3 Years",
-    "Usage/Application":"Carrom board and Dancing floor",
-    "features":["ISI-10116","kangaro PUNCH 500"],
-    "grade_standard":"Analytical Grade",
-    "Packaging_Type":"Box",
-    "images":["/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
-  "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500.webp"]
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "20gm",
+    "pack_contain": "12 piece",
+    "MRP": "300",
+    "price": "300",
+    "Selling rate": "290",
+    "shelf_life": "3 Years",
+    "Usage/Application": "Carrom board and Dancing floor",
+    "features": [
+      "ISI-10116",
+      "kangaro PUNCH 500",
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Analytical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
+      "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500.webp"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "100Gm Sarvodaya Boric Acid Powder",
+    "category": "Other Essentials",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "100gm",
+    "pack_contain": "6 piece",
+    "MRP": "420",
+    "price": "420",
+    "Selling rate": "",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Technical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp",
+      "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "400Gm Sarvodaya Boric Acid Powder",
+    "category": "Other Essentials",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "400gm",
+    "pack_contain": "",
+    "MRP": "230",
+    "price": "230",
+    "Selling rate": "",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Technical Grade",
+    "Packaging_Type": "",
+    "images": [
+      "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500.webp",
+      "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500 (1).webp"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "200Gm Sarvodaya Boric Acid Powder",
+    "category": "Other Essentials",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "200gm",
+    "pack_contain": "",
+    "MRP": "125",
+    "price": "125",
+    "Selling rate": "",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Analytical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/200gm-sarvodaya-boric-acid-powder-500x500.webp"
+    ]
   }
 ]

@@ -22,6 +22,8 @@ const CategoryGrid: React.FC<CategoryGridProps> = ({ categories, onCategorySelec
         return <Utensils className="w-12 h-12 text-green-600" />;
       case 'other essentials':
         return <Box className="w-12 h-12 text-orange-600" />;
+      case 'candles':
+        return <Sparkles className="w-12 h-12 text-yellow-600" />;
       default:
         return <Package className="w-12 h-12 text-gray-600" />;
     }
@@ -41,6 +43,8 @@ const CategoryGrid: React.FC<CategoryGridProps> = ({ categories, onCategorySelec
         return '/assets/category/dish-wash-cleaner.png';
       case 'other essentials':
         return '/assets/category/others-essentials.png';
+      case 'candles':
+        return '/assets/category/candles.png';
       default:
         return '/assets/category/floor-cleaner.png';
     }

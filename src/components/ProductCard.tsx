@@ -62,11 +62,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           )}
 
           {product.category !== 'Floor Wiper' &&
+            product.category !== 'Candles' &&
             product.Packaging_Size && (
               <span className="text-xs lg:text-sm text-gray-600 bg-green-100 px-2 py-1 rounded-md font-medium inline-block w-fit">
                 {product.Packaging_Size}
               </span>
             )}
+
+          {product.category === 'Candles' && product.candle_size && (
+            <span className="text-xs lg:text-sm text-gray-600 bg-yellow-100 px-2 py-1 rounded-md font-medium inline-block w-fit">
+              {product.candle_size}
+            </span>
+          )}
         </div>
       </div>
     </Link>

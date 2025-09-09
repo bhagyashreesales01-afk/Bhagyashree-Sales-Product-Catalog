@@ -29,6 +29,11 @@ interface Product {
   Fragrance?: string;
   form?: string;
   grade_standard?: string;       // ✅ added
+  box_contains?: string;         // ✅ New field
+  candle_size?: string;          // ✅ New field
+  type?: string;                 // ✅ New field
+  diameter?: string;             // ✅ New field
+  material?: string;             // ✅ New field
 }
 
 interface ProductDetailProps {
@@ -68,6 +73,11 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
     ...(product.pack_contain ? [{ label: 'Pack Contain', value: product.pack_contain }] : []), // ✅ new
     ...(product.shape ? [{ label: 'Shape', value: product.shape }] : []),     
     ...(product.color ? [{ label: 'Color', value: product.color }] : []),     
+    ...(product.box_contains ? [{ label: 'Box Contains', value: product.box_contains }] : []),
+    ...(product.candle_size ? [{ label: 'Candle Size', value: product.candle_size }] : []),
+    ...(product.type ? [{ label: 'Type', value: product.type }] : []),
+    ...(product.diameter ? [{ label: 'Diameter', value: product.diameter }] : []),
+    ...(product.material ? [{ label: 'Material', value: product.material }] : []),
     ...(product.Fragrance ? [{ label: 'Fragrance', value: product.Fragrance }] : []),
     ...(product.form ? [{ label: 'Form', value: product.form }] : []),
     ...(product.rod_material ? [{ label: 'Rod Material', value: product.rod_material }] : []), 

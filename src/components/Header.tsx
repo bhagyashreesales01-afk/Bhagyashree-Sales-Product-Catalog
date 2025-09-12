@@ -38,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm = '', onSearchChange }) => {
                 <img
                   src="/assets/company/logo.svg"
                   alt="Company Logo"
-                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain"
+                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain rounded-lg"
                 />
                 <div className="flex flex-col">
                   <h1

@@ -41,12 +41,13 @@ const Header: React.FC<HeaderProps> = ({ searchTerm = '', onSearchChange }) => {
                   className="w-8 h-8 lg:w-10 lg:h-10 object-contain rounded-lg"
                 />
                 <div className="flex flex-col">
-                  <h1
-                    className="text-lg lg:text-2xl font-bold text-gray-900"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
-                  >
-                    Bhagyashree Sales
-                  </h1>
+<h1
+  className="text-lg lg:text-2xl font-bold text-gray-900"
+  style={{ fontFamily: "'Merriweather', serif" }}
+>
+  Bhagyashree Sales
+</h1>
+
                   <p className="text-xs lg:text-sm text-gray-600">Product Catalog</p>
                 </div>
               </Link>

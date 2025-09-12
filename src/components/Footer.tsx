@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Award, Shield } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <footer className="bg-[#0f1c2e] text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -11,15 +11,18 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img
-                src="/assets/company/logo.jpg"
-                alt="Bhagyashree Sales Logo"
-                className="w-10 h-10 object-contain rounded-lg"
-              />
+              {/* Inline SVG Logo */}
+<img
+  src="/assets/company/logo.svg"
+  alt="Bhagyashree Sales Logo"
+                  className="w-8 h-8 lg:w-10 lg:h-10 object-contain rounded-lg"
+/>
+
+
               <div>
                 <h3 
                   className="text-lg font-bold text-white"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
+                  style={{ fontFamily: "'Merriweather', serif" }}
                 >
                   Bhagyashree Sales
                 </h3>
@@ -34,12 +37,12 @@ const Footer = () => {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-3">
               <div className="flex items-center gap-1 bg-blue-900/30 px-2 py-1 rounded-full">
-                <Award className="w-3 h-3 text-blue-400" />
-                <span className="text-xs text-blue-300">ISO Certified</span>
+                <Award className="w-3 h-3 text-white" />
+                <span className="text-xs text-white">ISO Certified</span>
               </div>
               <div className="flex items-center gap-1 bg-green-900/30 px-2 py-1 rounded-full">
-                <Shield className="w-3 h-3 text-green-400" />
-                <span className="text-xs text-green-300">Quality Assured</span>
+                <Shield className="w-3 h-3 text-white" />
+                <span className="text-xs text-white">Quality Assured</span>
               </div>
             </div>
           </div>
@@ -47,12 +50,12 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="lg:col-span-1">
             <h4 className="text-base font-semibold text-white mb-4 flex items-center gap-2">
-              <Phone className="w-4 h-4 text-blue-400" />
+              <Phone className="w-4 h-4 text-white" />
               Contact Us
             </h4>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-300">Phone</p>
                   <a 
@@ -65,7 +68,7 @@ const Footer = () => {
               </div>
               
               <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-sm text-gray-300">Email</p>
                   <div className="space-y-1">
@@ -90,11 +93,11 @@ const Footer = () => {
           {/* Address */}
           <div className="lg:col-span-1">
             <h4 className="text-base font-semibold text-white mb-4 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-blue-400" />
+              <MapPin className="w-4 h-4 text-white" />
               Our Location
             </h4>
             <div className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-gray-400 mt-0.5 flex-shrink-0" />
+              <MapPin className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-sm text-white leading-relaxed">
                   Flat No 305, Sr No 36/1/A,<br />
@@ -108,7 +111,7 @@ const Footer = () => {
           {/* Business Hours & Quick Links */}
           <div className="lg:col-span-1">
             <h4 className="text-base font-semibold text-white mb-4 flex items-center gap-2">
-              <Clock className="w-4 h-4 text-blue-400" />
+              <Clock className="w-4 h-4 text-white" />
               Business Hours
             </h4>
             <div className="space-y-2 mb-6">

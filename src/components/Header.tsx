@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm = '', onSearchChange }) => {
             <div className="flex items-center gap-2 lg:gap-3">
               <Link to="/" className="flex items-center gap-2 lg:gap-3 hover:opacity-80 transition-opacity">
                 <img
-                  src="/assets/company/logo.jpg"
+                  src="/assets/company/logo.svg"
                   alt="Company Logo"
                   className="w-8 h-8 lg:w-10 lg:h-10 object-contain"
                 />

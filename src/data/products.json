@@ -660,6 +660,154 @@
     "images": ["/assets/products/candles/5inch-white-rajdeep-candles-500x500.webp","/assets/products/candles/5inch-white-rajdeep-candles-500x500 (1).webp","/assets/products/candles/5inch-white-rajdeep-candles-500x500 (2).webp"]
   },
   {
+  "id": 81,
+  "name": "Galaxy Cotton Mop",
+  "category": "Cotton Mops",
+  "images": ["/assets/products/c"],
+  "price": "₹250",
+  "MRP": 250,
+  "rod_material": "Plastic",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Excellent Absorbing Capacity",
+    "Ideal for Hotels, Factories, Godowns, Halls, Offices"
+  ],
+  "rod_length": "3 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Galaxy",
+  "minimum_order_quantity": "300 Piece"
+},
+{
+  "id": 82,
+  "name": "Easy Cotton Mop",
+  "category": "Cotton Mops",
+  "images": [],
+  "price": "₹171",
+  "MRP": 171,
+  "rod_material": "Plastic",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Excellent Absorbing Capacity",
+    "Ideal for Mopping Large Floor Areas",
+    "Hotels, Hospitals, Factories, Godowns, Halls"
+  ],
+  "rod_length": "2.5 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Easy",
+  "minimum_order_quantity": "300 Piece",
+  "usage": "Floor Cleaning"
+},
+
+  {
+  "id": 83,
+  "name": "Kotak Cotton Mop",
+  "category": "Cotton Mops",
+  "images": [],
+  "price": "₹111",
+  "MRP": 111,
+  "rod_material": "Plastic",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Excellent Absorbing Capacity",
+    "Ideal for Mopping Large Floor Areas",
+    "Hotels, Hospitals, Factories, Godowns, Halls",
+    "Keep Clean & Fresh",
+    "Easy Fitting",
+    "Easy Availability of Refills",
+    "Strong Plastic Body",
+    "Easy Replaceable"
+  ],
+  "rod_length": "3 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Kotak",
+  "minimum_order_quantity": "300 Piece",
+  "usage": "Floor Cleaning"
+},
+{
+  "id": 84,
+  "name": "3.5 Feet Clean Mart Cotton Mop",
+  "category": "Cotton Mops",
+  "images": [],
+  "price": "₹151",
+  "MRP": 151,
+  "rod_material": "Plastic",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Excellent Absorbing Capacity",
+    "3.5 Feet Rod Length",
+    "Ideal for Floor Cleaning"
+  ],
+  "rod_length": "3.5 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Clean Mart",
+  "minimum_order_quantity": "300 Piece",
+  "usage": "Floor Cleaning"
+},
+{
+  "id": 85,
+  "name": "Model Twist Mop",
+  "category": "Cotton Mops",
+  "images": [],
+  "price": "₹250",
+  "MRP": 250,
+  "rod_material": "Stainless Steel",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Model Material Build",
+    "Strong Stainless Steel Rod",
+    "Ideal for Floor Cleaning"
+  ],
+  "rod_length": "2 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Model",
+  "minimum_order_quantity": "300 Piece",
+  "usage": "Floor Cleaning"
+},
+{
+  "id": 86,
+  "name": "Sony Cotton Mop",
+  "category": "Cotton Mops",
+  "images": [],
+  "price": "₹122",
+  "MRP": 122,
+  "rod_material": "Plastic",
+  "available": true,
+  "features": [
+    "Cotton Mop Head",
+    "Wet Mop Type",
+    "Clip Fit Mop",
+    "Suitable for Vast Area Balcony",
+    "Ideal for Floor Cleaning"
+  ],
+  "rod_length": "2.5 Feet",
+  "mop_head_material": "Cotton",
+  "color": "White",
+  "Selling rate": "",
+  "product_brand": "Sony",
+  "minimum_order_quantity": "300 Piece",
+  "usage": "Floor Cleaning"
+},
+  {
     "id": 101,
     "name": "20Gm Sarvodaya Boric Acid Powder",
     "category": "Other Essentials",
@@ -763,5 +911,61 @@
     "images": [
       "/assets/products/boric-acid-powder/200gm-sarvodaya-boric-acid-powder-500x500.webp"
     ]
-  }
+  },
+  {
+  "id": 105,
+  "name": "100Gm Sarvodaya Bleaching Powder",
+  "category": "Other Essentials",
+  "form": "Powder",
+  "available": true,
+  "brand": "Sarvodaya",
+  "Packaging_Size": "100gm",
+  "pack_contain": "",
+  "MRP": "100",
+  "price": "100",
+  "Selling rate": "95",
+  "shelf_life": "3 Years",
+  "Usage/Application": "Floor",
+  "features": [
+    "Purity 98%",
+    "Analytical Grade",
+    "Color White"
+  ],
+  "grade_standard": "Analytical Grade",
+  "Packaging_Type": "Packet",
+  "Physical_State": "Powder",
+  "images": ["/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500 (1).webp",
+"/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500.webp"]
+},{
+  
+  "id": 106,
+  "name": "Tiger Drainup Drain Cleaner",
+  "category": "Other Essentials",
+  "form": "Liquid",
+  "available": true,
+  "brand": "Tiger",
+  "Packaging_Size": "total 30 packets each 40g",
+  "pack_contain": "30 Packet",
+  "MRP": "900",
+  "price": "900",
+  "Selling rate": "",
+  "shelf_life": "24 Months",
+  "Usage/Application": "Bathroom Pipes",
+  "features": [
+    "Purity 99%",
+    "Color Blue",
+    "Minimum Order Quantity: 200 Piece"
+  ],
+  "grade_standard": "",
+  "Packaging_Type": "Box",
+  "CAS_Number": "",
+  "Grade": "",
+  "Purity": "99%",
+  "Physical_State": "Liquid",
+  "images": ["/assets/products/boric-acid-powder/1697625656031-500x500.webp",
+"/assets/products/boric-acid-powder/tiger-drainup-drain-cleaner-125x125 (2).webp",
+"/assets/products/boric-acid-powder/tiger-drainup-drain-cleaner-125x125.webp",
+"/assets/products/boric-acid-powder/tiger-drainup-drain-cleaner-125x125 (1).webp"]
+}
+
 ]

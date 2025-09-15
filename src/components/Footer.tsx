@@ -58,10 +58,10 @@ const Footer = () => {
                 <div>
                   <p className="text-sm text-gray-300">Phone</p>
                   <a 
-                    href="tel:+919876543210" 
+                    href="tel:+919850293070" 
                     className="text-sm text-white hover:text-blue-400 transition-colors"
                   >
-                    +91 98765 43210
+                    +91 9850293070 / +91 9359102181
                   </a>
                 </div>
               </div>
@@ -116,12 +116,12 @@ const Footer = () => {
             <div className="space-y-2 mb-6">
               <div className="flex justify-between text-sm">
                 <span className="text-gray-300">Mon - Sat:</span>
-                <span className="text-white">9:00 AM - 7:00 PM</span>
+                <span className="text-white">10:00 AM - 7:00 PM</span>
               </div>
-              <div className="flex justify-between text-sm">
+              {/* <div className="flex justify-between text-sm">
                 <span className="text-gray-300">Sunday:</span>
-                <span className="text-white">10:00 AM - 5:00 PM</span>
-              </div>
+                <span className="text-white">Closed</span>
+              </div> */}
             </div>
 
             {/* Quick Links */}

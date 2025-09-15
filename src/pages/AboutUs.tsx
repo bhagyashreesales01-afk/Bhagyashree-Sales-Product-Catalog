@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
             >
               About Bhagyashree Sales
             </h1>
-            <p className="text-blue-100 text-sm lg:text-lg">Delivering trusted cleaning and household essentials since 2013</p>
+            <p className="text-blue-100 text-sm lg:text-lg">Delivering trusted cleaning and household essentials since 2011</p>
           </div>
 
           {/* Content */}
@@ -40,7 +40,7 @@ const AboutUs: React.FC = () => {
                 <h2 className="text-lg lg:text-xl font-semibold text-gray-900">Our Story</h2>
               </div>
               <p className="text-sm lg:text-base text-gray-600 leading-relaxed mb-4">
-                Established in 2013, Bhagyashree Sales has steadily built a well-recognized name as a trusted 
+                Established in 2011, Bhagyashree Sales has steadily built a well-recognized name as a trusted 
                 Trader, Wholesaler, and Distributor of premium cleaning and household products. Over the years, 
                 we have developed strong relationships with both our suppliers and customers, ensuring that every 
                 product we deliver reflects our commitment to quality and reliability.
@@ -160,7 +160,7 @@ const AboutUs: React.FC = () => {
             <div className="mt-6 lg:mt-8 text-center">
               <p className="text-sm lg:text-lg text-gray-700 font-medium italic">
                 "At Bhagyashree Sales, we believe in delivering products that bring together quality, affordability, 
-                and trust. Since 2013, our focus has remained the same: to serve our customers with integrity, 
+                and trust. Since 2011, our focus has remained the same: to serve our customers with integrity, 
                 consistency, and care."
               </p>
             </div>

@@ -9,33 +9,33 @@ interface Product {
   images: string[];
   available: boolean;
   price: string;
-  quantity: string;
+  quantity?: string;
   MRP: string;
   Packaging_Size?: string;
   pack_type?: string;
   Packaging_Type?: string;
-  pack_contain?: string;         // ✅ added
-  shape?: string;       
-  color?: string;       
+  pack_contain?: string;
+  shape?: string;
+  color?: string;
   'Usage/Application'?: string;
   shelf_life?: string;
   product_brand?: string;
   'Selling rate'?: string;
   features?: string[];
-  rod_material?: string;   
-  rod_length?: string;     
-  blade_length?: string; 
+  rod_material?: string;
+  rod_length?: string;
+  blade_length?: string;
   brand?: string;
   Fragrance?: string;
   form?: string;
-  grade_standard?: string;       // ✅ added
-  box_contains?: string;         // ✅ New field
-  candle_size?: string;          // ✅ New field
-  type?: string;                 // ✅ New field
-  diameter?: string;             // ✅ New field
-  material?: string;             // ✅ New field
+  grade_standard?: string;
+  box_contains?: string;
+  candle_size?: string;
+  type?: string;
+  diameter?: string;
+  material?: string;
+  mop_head_material?: string;
 }
-
 interface ProductDetailProps {
   products: Product[];
 }
@@ -70,9 +70,9 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
     ...(product.Packaging_Size ? [{ label: 'Packaging Size', value: product.Packaging_Size }] : []),
     ...(product.pack_type ? [{ label: 'Pack Type', value: product.pack_type }] : []),
     ...(product.Packaging_Type ? [{ label: 'Packaging Type', value: product.Packaging_Type }] : []),
-    ...(product.pack_contain ? [{ label: 'Pack Contain', value: product.pack_contain }] : []), // ✅ new
-    ...(product.shape ? [{ label: 'Shape', value: product.shape }] : []),     
-    ...(product.color ? [{ label: 'Color', value: product.color }] : []),     
+    ...(product.pack_contain ? [{ label: 'Pack Contain', value: product.pack_contain }] : []),
+    ...(product.shape ? [{ label: 'Shape', value: product.shape }] : []),
+    ...(product.color ? [{ label: 'Color', value: product.color }] : []),
     ...(product.box_contains ? [{ label: 'Box Contains', value: product.box_contains }] : []),
     ...(product.candle_size ? [{ label: 'Candle Size', value: product.candle_size }] : []),
     ...(product.type ? [{ label: 'Type', value: product.type }] : []),
@@ -80,11 +80,12 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
     ...(product.material ? [{ label: 'Material', value: product.material }] : []),
     ...(product.Fragrance ? [{ label: 'Fragrance', value: product.Fragrance }] : []),
     ...(product.form ? [{ label: 'Form', value: product.form }] : []),
-    ...(product.rod_material ? [{ label: 'Rod Material', value: product.rod_material }] : []), 
-    ...(product.rod_length ? [{ label: 'Rod Length', value: product.rod_length }] : []),       
-    ...(product.blade_length ? [{ label: 'Blade Length', value: product.blade_length }] : []), 
+    ...(product.rod_material ? [{ label: 'Rod Material', value: product.rod_material }] : []),
+    ...(product.rod_length ? [{ label: 'Rod Length', value: product.rod_length }] : []),
+    ...(product.blade_length ? [{ label: 'Blade Length', value: product.blade_length }] : []),
+    ...(product.mop_head_material ? [{ label: 'Mop Head Material', value: product.mop_head_material }] : []), // ✅
     ...(product['Usage/Application'] ? [{ label: 'Usage/Application', value: product['Usage/Application'] }] : []),
-    ...(product.grade_standard ? [{ label: 'Grade Standard', value: product.grade_standard }] : []), // ✅ new
+    ...(product.grade_standard ? [{ label: 'Grade Standard', value: product.grade_standard }] : []),
     ...(product.shelf_life ? [{ label: 'Shelf Life', value: product.shelf_life }] : []),
     ...(product.product_brand ? [{ label: 'Brand', value: product.product_brand }] : []),
     ...(product.brand ? [{ label: 'Brand', value: product.brand }] : []),
@@ -107,7 +108,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 lg:p-8">
           {/* Left Side - Images */}
           <div className="space-y-4">
-            {/* Main Image Display */}
             <div className="w-full h-96 bg-gray-50 rounded-lg overflow-hidden">
               <img
                 src={product.images[selectedImageIndex]}
@@ -115,8 +115,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
                 className="w-full h-full object-contain p-4"
               />
             </div>
-
-            {/* Image Selection */}
             {product.images.length > 1 && (
               <div className="flex gap-3">
                 {product.images.map((image, index) => (
@@ -142,7 +140,6 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
 
           {/* Right Side - Product Details */}
           <div className="space-y-6">
-            {/* Product Title and Pricing */}
             <div>
               <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
                 {product.name}
@@ -167,9 +164,8 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
                 </div>
               </div>
 
-              <br />
-              {/* Product Specifications Table */}
-              <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+              {/* Product Specifications */}
+              <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
                 <div className="bg-gradient-to-r from-gray-50 to-gray-100 px-6 py-4 border-b border-gray-200">
                   <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
                     <Package className="w-5 h-5 text-blue-600" />

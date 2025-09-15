@@ -16,7 +16,7 @@ const getCategoryIcon = (category: string) => {
       return <Sparkles className={`${common} text-purple-600`} />;
     case 'floor wiper':
       return <Droplets className={`${common} text-blue-600`} />;
-    case 'cotton mop':
+    case 'cotton mops': // ✅ corrected
       return <Sparkles className={`${common} text-purple-600`} />;
     case 'dish cleaner':
       return <Utensils className={`${common} text-green-600`} />;
@@ -37,8 +37,8 @@ const getCategoryImage = (category: string) => {
       return '/assets/category/napthaline-balls.png';
     case 'floor wiper':
       return '/assets/category/floor-wiper.png';
-    case 'cotton mop':
-      return '/assets/category/cotton-mop.png';
+    case 'cotton mops': // ✅ corrected
+      return '/assets/category/cotton-mops.png';
     case 'dish cleaner':
       return '/assets/category/dish-wash-cleaner.png';
     case 'other essentials':

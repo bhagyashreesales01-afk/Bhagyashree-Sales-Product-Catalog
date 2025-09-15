@@ -1,5 +1,5 @@
 import React from 'react';
-import { Package, Droplets, Sparkles, Utensils, Box } from 'lucide-react';
+import { Package, Droplets, Sparkles, Box } from 'lucide-react';
 
 interface CategoryGridProps {
   categories: string[];
@@ -16,10 +16,10 @@ const getCategoryIcon = (category: string) => {
       return <Sparkles className={`${common} text-purple-600`} />;
     case 'floor wiper':
       return <Droplets className={`${common} text-blue-600`} />;
-    case 'cotton mops': // ✅ corrected
+    case 'cotton mops':
       return <Sparkles className={`${common} text-purple-600`} />;
-    case 'dish cleaner':
-      return <Utensils className={`${common} text-green-600`} />;
+    case 'boric powder': // ✅ new category
+      return <Box className={`${common} text-teal-600`} />;
     case 'other essentials':
       return <Box className={`${common} text-orange-600`} />;
     case 'candles':
@@ -37,10 +37,10 @@ const getCategoryImage = (category: string) => {
       return '/assets/category/napthaline-balls.png';
     case 'floor wiper':
       return '/assets/category/floor-wiper.png';
-    case 'cotton mops': // ✅ corrected
+    case 'cotton mops':
       return '/assets/category/cotton-mops.png';
-    case 'dish cleaner':
-      return '/assets/category/dish-wash-cleaner.png';
+    case 'boric powder': // ✅ new category
+      return '/assets/category/boric-powder.png';
     case 'other essentials':
       return '/assets/category/others-essentials.png';
     case 'candles':
@@ -88,11 +88,20 @@ const CategoryTile: React.FC<{
 };
 
 const CategoryGrid: React.FC<CategoryGridProps> = ({ categories, onCategorySelect }) => {
+  // ✅ Ensure "Other Essentials" always comes last
+  const sortedCategories = [...categories]
+    .filter((category) => category.toLowerCase() !== 'dish cleaner') // remove dish cleaner
+    .sort((a, b) => {
+      if (a.toLowerCase() === 'other essentials') return 1;
+      if (b.toLowerCase() === 'other essentials') return -1;
+      return 0;
+    });
+
   return (
     <div className="mb-4 md:mb-6">
       {/* Compact 4-up on mobile, scales up on larger screens */}
       <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-y-3 md:gap-y-4 gap-x-2 md:gap-x-3">
-        {categories.map((category) => (
+        {sortedCategories.map((category) => (
           <CategoryTile
             key={category}
             category={category}

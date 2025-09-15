@@ -593,7 +593,7 @@
     "material": "Wax",
     "MRP": "100",
     "price": "100",
-    "Selling rate": "55",
+    "Selling rate": "85",
     "shelf_life": "",
     "Usage/Application": "Decoration",
     "features": [
@@ -688,21 +688,6 @@
       "/assets/products/candles/5inch-white-rajdeep-candles-500x500 (1).webp",
       "/assets/products/candles/5inch-white-rajdeep-candles-500x500 (2).webp"
     ]
-  },
-  {
-    "id": 75,
-    "name": "White Candles",
-    "available": true,
-    "box_contains": "30 pieces",
-    "MRP": "60",
-    "Selling rate": "36",
-    "brand": "Akashdeep",
-    "Usage/Application": "Festival, Decoration",
-    "features":["Decorative usage in Festivals or events"],
-    "Packaging_Type":"Box",
-    "material":"Wax",
-    "images":["/assets/products/candles/Akashdeep-candles.jpg"],
-    "category":"Candles"
   },
   {
     "id": 81,

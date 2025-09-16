@@ -20,7 +20,7 @@ function App() {
   }));
 
   const [globalSearchTerm, setGlobalSearchTerm] = useState('');
-  
+
   // Use image preloader hook
   const { isLoading } = useImagePreloader({ 
     products, 
@@ -34,11 +34,18 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#10707A]">
+      {/* Global Header with search */}
       <Header searchTerm={globalSearchTerm} onSearchChange={setGlobalSearchTerm} />
 
       <div className="bg-[#E8F9FF] min-h-screen">
         <Routes>
-          <Route path="/" element={<HomePage products={products} globalSearchTerm={globalSearchTerm} setGlobalSearchTerm={setGlobalSearchTerm} />} />
+          <Route path="/" element={
+            <HomePage 
+              products={products} 
+              globalSearchTerm={globalSearchTerm} 
+              setGlobalSearchTerm={setGlobalSearchTerm} 
+            />} 
+          />
           <Route path="/product/:id" element={<ProductDetail products={products} />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
@@ -57,48 +64,39 @@ function HomePage({ products, globalSearchTerm, setGlobalSearchTerm }: {
   setGlobalSearchTerm: (term: string) => void; 
 }) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [localSearchTerm, setLocalSearchTerm] = useState('');
 
   const categories = useMemo(() => {
     return Array.from(new Set(products.map(product => product.category)));
   }, [products]);
 
-  // Use global search term when no category is selected, local search when category is selected
-  const effectiveSearchTerm = selectedCategory ? localSearchTerm : globalSearchTerm;
-  
-  // Check if we're in search mode (either global search or category search)
-  const isSearchMode = globalSearchTerm.trim() !== '' || (selectedCategory && localSearchTerm.trim() !== '');
-const filteredProducts = useMemo(() => {
-  return products.filter(product => {
-    const name = product.name || '';  // fallback to empty string if undefined
-    const matchesSearch = name.toLowerCase().includes(effectiveSearchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === null || product.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
-}, [products, effectiveSearchTerm, selectedCategory]);
+  const effectiveSearchTerm = globalSearchTerm;
 
+  // Check if we're in search mode
+  const isSearchMode = globalSearchTerm.trim() !== '';
+
+  const filteredProducts = useMemo(() => {
+    return products.filter(product => {
+      const name = product.name || '';
+      const matchesSearch = name.toLowerCase().includes(effectiveSearchTerm.toLowerCase());
+      const matchesCategory = selectedCategory === null || product.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [products, effectiveSearchTerm, selectedCategory]);
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
-    setLocalSearchTerm(''); // Clear local search when selecting category
     setGlobalSearchTerm(''); // Clear global search when selecting category
   };
 
   const handleBackToHome = () => {
     setSelectedCategory(null);
-    setLocalSearchTerm('');
     setGlobalSearchTerm('');
   };
 
   const handleBackFromSearch = () => {
-    if (selectedCategory) {
-      // If we're in a category, just clear the local search
-      setLocalSearchTerm('');
-    } else {
-      // If we're in global search, clear global search
-      setGlobalSearchTerm('');
-    }
+    setGlobalSearchTerm('');
   };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
       {/* Search Results View */}
@@ -111,7 +109,7 @@ const filteredProducts = useMemo(() => {
               className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium text-sm lg:text-base"
             >
               <ArrowLeft className="w-4 h-4 lg:w-5 lg:h-5 mr-2" />
-              {selectedCategory ? `Back to ${selectedCategory}` : 'Back to Categories'}
+              Back to {selectedCategory ? selectedCategory : 'Categories'}
             </button>
           </div>
 
@@ -173,17 +171,6 @@ const filteredProducts = useMemo(() => {
             <p className="text-sm lg:text-base text-gray-600">
               {products.filter(p => p.category === selectedCategory).length} product{products.filter(p => p.category === selectedCategory).length !== 1 ? 's' : ''} available
             </p>
-          </div>
-
-          {/* Search Bar for Category */}
-          <div className="mb-4 lg:mb-6">
-            <input
-              type="text"
-              placeholder={`Search in ${selectedCategory}...`}
-              value={localSearchTerm}
-              onChange={(e) => setLocalSearchTerm(e.target.value)}
-              className="w-full max-w-md px-3 lg:px-4 py-2 lg:py-3 text-sm lg:text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
           </div>
 
           {/* Products in Category */}

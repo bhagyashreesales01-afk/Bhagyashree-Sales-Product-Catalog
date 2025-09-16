@@ -195,7 +195,7 @@
     "price": "₹60"
   },
   {
-    "id":14,
+    "id": 14,
     "name": "5L Tiger Metro Fresh",
     "category": "Floor Cleaner",
     "images": [
@@ -340,7 +340,190 @@
     "Selling rate": "75"
   },
   {
-    "id": 31,
+    "id": 15,
+    "name": "500ml Tiger Neemfresh",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "150",
+    "Selling rate": "108",
+    "color": "Green",
+    "form": "Liquid",
+    "Packaging_Size": "500ML",
+    "Usage/Application": "Floor Cleaning",
+    "pack_type": "Bottle",
+    "Fragrance": "Neem & Camphor",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-neem-fresh-500ml (1).jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "1L Tiger Neemfresh",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "250",
+    "Selling rate": "180",
+    "color": "Green",
+    "form": "Liquid",
+    "Usage/Application": "Floor Cleaning",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "Fragrance": "Neem & Camphor",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-neem-fresh-1L.jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "500ml Tiger Multipurpose",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "150",
+    "Selling rate": "125",
+    "color": "Purple",
+    "form": "Liquid",
+    "Usage/Application": "Multi-Surface Floor Cleaning",
+    "Packaging_Size": "500ML",
+    "pack_type": "Bottle",
+    "Fragrance": "Lavender",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-lavender-500ml.jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial",
+      "Available flavour- rose , jasmine , lavender"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "1L Tiger Multipurpose ",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "250",
+    "Usage/Application": "Multi-Surface Floor Cleaning",
+    "Selling rate": "205",
+    "color": "Purple",
+    "form": "Liquid",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "Fragrance": "Lavender",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-lavender-1l.jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial",
+      "Available flavour- rose , jasmine , lavender"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "500ml Tiger Pinefresh ",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "150",
+    "Selling rate": "106",
+    "color": "Brown",
+    "form": "Liquid",
+    "Usage/Application": "Floor Cleaning",
+    "Packaging_Size": "500ML",
+    "pack_type": "Bottle",
+    "Fragrance": "Pine",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-pinefresh-500ml.jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "1L Tiger Pinefresh ",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "250",
+    "Usage/Application": "Floor Cleaning",
+    "Selling rate": "180",
+    "color": "Purple",
+    "form": "Liquid",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "Fragrance": "Pine",
+    "images": [
+      "/assets/products/floor-cleaner/tiger-pinefresh-1L.jpg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial"
+    ]
+  },
+   {
+    "id": 21,
+    "name": "1L Glaze Acid Bathroom Cleaners",
+    "available": true,
+    "brand": "Glaze",
+    "category": "Floor Cleaner",
+    "form": "Liquid",
+    "color": "Blue",
+    "images": [
+      "/assets/products/floor-cleaner/1ltr-glaze-acid-hcl-bathroom-cleaner-500x500.webp",
+      "/assets/products/floor-cleaner/1ltr-glaze-acid-hcl-bathroom-cleaner-500x500 (1).webp"
+    ],
+    "Packaging_Size": "1L",
+    "pack_type": "Can",
+    "MRP": "110",
+    "Selling rate": "30",
+    "Usage/Application": "Domestic",
+    "features": [
+      "1L Glaze Acid Bathroom Cleaners",
+      "Makes Surface shiny "
+    ]
+  },
+  {
+    "id": 22,
+    "name": "5L Glaze Acid Bathroom Cleaners",
+    "available": true,
+    "brand": "Glaze",
+    "category": "Floor Cleaner",
+    "form": "Liquid",
+    "color": "Blue",
+    "images": [
+      "/assets/products/floor-cleaner/glaze-5l.webp"
+    ],
+    "Packaging_Size": "5L",
+    "pack_type": "Can",
+    "MRP": "500",
+    "Selling rate": "250",
+    "Usage/Application": "Domestic",
+    "features": [
+      "5L Glaze Acid Bathroom Cleaners",
+      "Makes Surface shiny "
+    ]
+  },
+  {
+    "id": 33,
     "name": "200gm Tiger Naphthalene Balls",
     "category": "Naphthalene Balls",
     "images": [
@@ -363,7 +546,7 @@
     ]
   },
   {
-    "id": 32,
+    "id": 31,
     "name": "50gm Tiger Naphthalene Balls",
     "category": "Naphthalene Balls",
     "images": [
@@ -386,7 +569,7 @@
     ]
   },
   {
-    "id": 33,
+    "id": 32,
     "name": "100Gm Tiger Brand Naphthalene Balls",
     "category": "Naphthalene Balls",
     "images": [
@@ -435,33 +618,46 @@
     "brand": "Tiger"
   },
   {
-    "id":35,
-    "name":"150 gm Scented Cube",
-    "available":true,
-    "features":["Scented Cubes for toilet and bathroom","Mind Soothening scent", "Durable","Easy to place"],
-    "category":"Naphthalene Balls",
-    "MRP":"110",
-    "Selling rate":45,
-    "Packaging_Size":"150gm",
-    "pack_contain":"12 pieces",
-    "Usage/Application":"Bathroom Freshner",
-    "shape":"Round disc shaped",
-    "images":["/assets/products/naphthalene-balls/Scented-Cube-1.jpg","/assets/products/naphthalene-balls/Scented-Cube-2.jpg"]
-
+    "id": 36,
+    "name": "150 gm Scented Cube",
+    "available": true,
+    "features": [
+      "Scented Cubes for toilet and bathroom",
+      "Mind Soothening scent",
+      "Durable",
+      "Easy to place"
+    ],
+    "category": "Naphthalene Balls",
+    "MRP": "110",
+    "Selling rate": 45,
+    "Packaging_Size": "150gm",
+    "pack_contain": "12 pieces",
+    "Usage/Application": "Bathroom Freshner",
+    "shape": "Round disc shaped",
+    "images": [
+      "/assets/products/naphthalene-balls/Scented-Cube-1.jpg",
+      "/assets/products/naphthalene-balls/Scented-Cube-2.jpg"
+    ]
   },
   {
-        "id":36,
-    "name":"80 gm Scented Cube",
-    "available":true,
-    "brand":"Hari Om Enterprizes",
-    "features":["Scented Cubes for toilet and bathroom","Mind Soothening scent", "Durable","Easy to place"],
-    "category":"Naphthalene Balls",
-    "MRP":"80",
-    "Selling rate":40,
-    "Packaging_Size":"80gm",
-    "Usage/Application":"Bathroom Freshner",
-    "images":["/assets/products/naphthalene-balls/Scented-cube-3.png"]
-
+    "id": 35,
+    "name": "80 gm Scented Cube",
+    "available": true,
+    "brand": "Hari Om Enterprizes",
+    "features": [
+      "Scented Cubes for toilet and bathroom",
+      "Mind Soothening scent",
+      "Durable",
+      "Easy to place"
+    ],
+    "category": "Naphthalene Balls",
+    "MRP": "80",
+    "Selling rate": 40,
+    "Packaging_Size": "80gm",
+    "Usage/Application": "Bathroom Freshner",
+    "images": [
+      "/assets/products/naphthalene-balls/Scented-cube-3.png"
+    ]
   },
   {
     "id": 51,
@@ -609,7 +805,7 @@
     ]
   },
   {
-    "id": 71,
+    "id": 74,
     "name": "C5 White Candles",
     "category": "Candles",
     "form": "Solid",
@@ -637,7 +833,7 @@
     ]
   },
   {
-    "id": 72,
+    "id": 73,
     "name": "C10 White Candles",
     "category": "Candles",
     "form": "Solid",
@@ -664,7 +860,7 @@
     ]
   },
   {
-    "id": 73,
+    "id": 71,
     "name": "C6 White Candles",
     "category": "Candles",
     "form": "Solid",
@@ -692,7 +888,7 @@
     ]
   },
   {
-    "id": 74,
+    "id": 72,
     "name": "C30 White Candles",
     "category": "Candles",
     "form": "Solid",
@@ -904,138 +1100,138 @@
     "pack_contain": "1 piece",
     "mop_head_material": "Cotton"
   },
-{
-  "id": 101,
-  "name": "20Gm Sarvodaya Boric Acid Powder",
-  "category": "Boric Powder",
-  "form": "Powder",
-  "available": true,
-  "brand": "Sarvodaya",
-  "Packaging_Size": "20gm",
-  "pack_contain": "12 piece",
-  "MRP": "20 per piece",
-  "price": "20 per piece",
-  "Selling rate": "12 per piece",
-  "shelf_life": "3 Years",
-  "Usage/Application": "Carrom board and Dancing floor",
-  "features": [
-    "ISI-10116",
-    "kangaro PUNCH 500",
-    "Purity 99%",
-    "Color White",
-    "Soluble in Water"
-  ],
-  "grade_standard": "Analytical Grade",
-  "Packaging_Type": "Box",
-  "images": [
-    "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
-    "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500.webp"
-  ]
-},
-{
-  "id": 102,
-  "name": "50Gm Sarvodaya Bleaching Powder",
-  "category": "Boric Powder",
-  "form": "Powder",
-  "available": true,
-  "brand": "Sarvodaya",
-  "Packaging_Size": "50gm",
-  "pack_contain": "12 pieces",
-  "MRP": "45 per piece",
-  "price": "45 per piece",
-  "Selling rate": "28 per piece",
-  "shelf_life": "3 Years",
-  "Usage/Application": "Floor",
-  "features": [
-    "Purity 98%",
-    "Analytical Grade",
-    "Color White"
-  ],
-  "grade_standard": "Analytical Grade",
-  "Packaging_Type": "Packet",
-  "Physical_State": "Powder",
-  "images": [
-    "/assets/products/boric-acid-powder/50gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
-    "/assets/products/boric-acid-powder/50gm-sarvodaya-boric-acid-powder-500x500.webp"
-  ]
-},
-{
-  "id": 103,
-  "name": "100Gm Sarvodaya Boric Acid Powder",
-  "category": "Boric Powder",
-  "form": "Powder",
-  "available": true,
-  "brand": "Sarvodaya",
-  "Packaging_Size": "100gm",
-  "pack_contain": "6 piece",
-  "MRP": "70 per piece",
-  "price": "70 per piece",
-  "Selling rate": "43 per piece",
-  "shelf_life": "2 Years",
-  "Usage/Application": "Carrom Board And Dancing Floor",
-  "features": [
-    "Purity 99%",
-    "Color White",
-    "Soluble in Water"
-  ],
-  "grade_standard": "Technical Grade",
-  "Packaging_Type": "Box",
-  "images": [
-    "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp",
-    "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp"
-  ]
-},
-{
-  "id": 104,
-  "name": "200Gm Sarvodaya Boric Acid Powder",
-  "category": "Boric Powder",
-  "form": "Powder",
-  "available": true,
-  "brand": "Sarvodaya",
-  "Packaging_Size": "200gm",
-  "pack_contain": "",
-  "MRP": "125",
-  "price": "125",
-  "Selling rate": "82",
-  "shelf_life": "2 Years",
-  "Usage/Application": "Carrom Board And Dancing Floor",
-  "features": [
-    "Purity 99%",
-    "Color White",
-    "Soluble in Water"
-  ],
-  "grade_standard": "Analytical Grade",
-  "Packaging_Type": "Box",
-  "images": [
-    "/assets/products/boric-acid-powder/200gm-sarvodaya-boric-acid-powder-500x500.webp"
-  ]
-},
-{
-  "id": 105,
-  "name": "400Gm Sarvodaya Boric Acid Powder",
-  "category": "Boric Powder",
-  "form": "Powder",
-  "available": true,
-  "brand": "Sarvodaya",
-  "Packaging_Size": "400gm",
-  "pack_contain": "",
-  "MRP": "230",
-  "price": "230",
-  "Selling rate": "150",
-  "shelf_life": "2 Years",
-  "Usage/Application": "Carrom Board And Dancing Floor",
-  "features": [
-    "Purity 99%",
-    "Color White",
-    "Soluble in Water"
-  ],
-  "grade_standard": "Technical Grade",
-  "Packaging_Type": "",
-  "images": [
-    "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500.webp",
-    "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500 (1).webp"
-  ]
-},
+  {
+    "id": 101,
+    "name": "20Gm Sarvodaya Boric Acid Powder",
+    "category": "Boric Powder",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "20gm",
+    "pack_contain": "12 piece",
+    "MRP": "20 per piece",
+    "price": "20 per piece",
+    "Selling rate": "12 per piece",
+    "shelf_life": "3 Years",
+    "Usage/Application": "Carrom board and Dancing floor",
+    "features": [
+      "ISI-10116",
+      "kangaro PUNCH 500",
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Analytical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
+      "/assets/products/boric-acid-powder/20gm-sarvodaya-boric-acid-powder-500x500.webp"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "50Gm Sarvodaya Bleaching Powder",
+    "category": "Boric Powder",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "50gm",
+    "pack_contain": "12 pieces",
+    "MRP": "45 per piece",
+    "price": "45 per piece",
+    "Selling rate": "28 per piece",
+    "shelf_life": "3 Years",
+    "Usage/Application": "Floor",
+    "features": [
+      "Purity 98%",
+      "Analytical Grade",
+      "Color White"
+    ],
+    "grade_standard": "Analytical Grade",
+    "Packaging_Type": "Packet",
+    "Physical_State": "Powder",
+    "images": [
+      "/assets/products/boric-acid-powder/50gm-sarvodaya-boric-acid-powder-500x500 (1).webp",
+      "/assets/products/boric-acid-powder/50gm-sarvodaya-boric-acid-powder-500x500.webp"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "100Gm Sarvodaya Boric Acid Powder",
+    "category": "Boric Powder",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "100gm",
+    "pack_contain": "6 piece",
+    "MRP": "70 per piece",
+    "price": "70 per piece",
+    "Selling rate": "43 per piece",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Technical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp",
+      "/assets/products/boric-acid-powder/100gm-sarvodaya-boric-acid-powder-500x500 (2).webp"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "200Gm Sarvodaya Boric Acid Powder",
+    "category": "Boric Powder",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "200gm",
+    "pack_contain": "",
+    "MRP": "125",
+    "price": "125",
+    "Selling rate": "82",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Analytical Grade",
+    "Packaging_Type": "Box",
+    "images": [
+      "/assets/products/boric-acid-powder/200gm-sarvodaya-boric-acid-powder-500x500.webp"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "400Gm Sarvodaya Boric Acid Powder",
+    "category": "Boric Powder",
+    "form": "Powder",
+    "available": true,
+    "brand": "Sarvodaya",
+    "Packaging_Size": "400gm",
+    "pack_contain": "",
+    "MRP": "230",
+    "price": "230",
+    "Selling rate": "150",
+    "shelf_life": "2 Years",
+    "Usage/Application": "Carrom Board And Dancing Floor",
+    "features": [
+      "Purity 99%",
+      "Color White",
+      "Soluble in Water"
+    ],
+    "grade_standard": "Technical Grade",
+    "Packaging_Type": "",
+    "images": [
+      "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500.webp",
+      "/assets/products/boric-acid-powder/400gm-boric-acid-powder-500x500 (1).webp"
+    ]
+  },
   {
     "id": 106,
     "name": "Tiger Drainup Drain Cleaner",

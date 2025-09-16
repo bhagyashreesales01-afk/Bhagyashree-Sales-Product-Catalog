@@ -36,6 +36,7 @@ interface Product {
   material?: string;
   mop_head_material?: string;
 }
+
 interface ProductDetailProps {
   products: Product[];
 }
@@ -83,13 +84,17 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
     ...(product.rod_material ? [{ label: 'Rod Material', value: product.rod_material }] : []),
     ...(product.rod_length ? [{ label: 'Rod Length', value: product.rod_length }] : []),
     ...(product.blade_length ? [{ label: 'Blade Length', value: product.blade_length }] : []),
-    ...(product.mop_head_material ? [{ label: 'Mop Head Material', value: product.mop_head_material }] : []), // ✅
+    ...(product.mop_head_material ? [{ label: 'Mop Head Material', value: product.mop_head_material }] : []),
     ...(product['Usage/Application'] ? [{ label: 'Usage/Application', value: product['Usage/Application'] }] : []),
     ...(product.grade_standard ? [{ label: 'Grade Standard', value: product.grade_standard }] : []),
     ...(product.shelf_life ? [{ label: 'Shelf Life', value: product.shelf_life }] : []),
     ...(product.product_brand ? [{ label: 'Brand', value: product.product_brand }] : []),
     ...(product.brand ? [{ label: 'Brand', value: product.brand }] : []),
   ];
+
+  // Check if we should show only Selling Rate
+  const showOnlySellingRate =
+    product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -149,20 +154,34 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
               </span>
 
               {/* Pricing Section */}
-              <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-medium text-gray-600">MRP:</span>
-                    <span className="text-2xl font-bold text-blue-600">₹{product.MRP}</span>
+              {!showOnlySellingRate ? (
+                <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                    {/* Show MRP */}
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-medium text-gray-600">MRP:</span>
+                      <span className="text-2xl font-bold text-blue-600">₹{product.MRP}</span>
+                    </div>
+                    {/* Show Selling Rate if available */}
+                    {product['Selling rate'] && (
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-medium text-gray-600">Selling Price:</span>
+                        <span className="text-xl font-bold text-green-600">₹{product['Selling rate']}</span>
+                      </div>
+                    )}
                   </div>
-                  {product['Selling rate'] && (
+                </div>
+              ) : (
+                // Floor Wiper 54,55: only show Selling Rate
+                product['Selling rate'] && (
+                  <div className="mt-4 p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border border-green-200">
                     <div className="flex items-center gap-2">
                       <span className="text-sm font-medium text-gray-600">Selling Price:</span>
                       <span className="text-xl font-bold text-green-600">₹{product['Selling rate']}</span>
                     </div>
-                  )}
-                </div>
-              </div>
+                  </div>
+                )
+              )}
 
               {/* Product Specifications */}
               <div className="mt-6 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">

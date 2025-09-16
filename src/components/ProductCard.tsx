@@ -19,7 +19,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const productImage =
     product.images && product.images.length > 0
       ? product.images[0]
-      : '/assets/placeholder.png'; // fallback placeholder image
+      : '/assets/placeholder.png';
+
+  // Check if we need to show selling rate instead of MRP
+  const showSellingRate =
+    product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55);
 
   return (
     <Link
@@ -55,12 +59,22 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         </h3>
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mt-auto pt-2 border-t border-gray-100">
-          {product.MRP && (
-            <span className="font-bold text-blue-600 text-sm lg:text-base">
-              MRP: ₹{product.MRP}
-            </span>
+          {/* MRP or Selling Rate */}
+          {showSellingRate ? (
+            product['Selling rate'] && (
+              <span className="font-bold text-blue-600 text-sm lg:text-base">
+                Selling Rate: ₹{product['Selling rate']}
+              </span>
+            )
+          ) : (
+            product.MRP && (
+              <span className="font-bold text-blue-600 text-sm lg:text-base">
+                MRP: ₹{product.MRP}
+              </span>
+            )
           )}
 
+          {/* Packaging / Candle size */}
           {product.category !== 'Floor Wiper' &&
             product.category !== 'Candles' &&
             product.Packaging_Size && (

@@ -724,6 +724,26 @@
     "blade_length": "9 inch"
   },
   {
+    "id":54,
+    "name":"Diamond Ceiling Broom",
+    "available":true,
+    "Usage/Application":"Dusting and removiung spider web",
+    "images":["/assets/products/floor-wiper/diamond-ceiling-broom.jpg"],
+    "Selling rate":"112",
+    "category":"Floor Wiper",
+    "features":["Dusting","Removing Spider Web","Cleans various narrow surfaces"]
+  },
+    {
+    "id":55,
+    "name":"Round Ceiling Broom",
+    "available":true,
+    "Usage/Application":"Dusting and removiung spider web",
+    "images":["/assets/products/floor-wiper/round-ceiling-broom.jpg"],
+    "Selling rate":"110",
+    "category":"Floor Wiper",
+    "features":["Dusting","Removing Spider Web","Cleans various narrow surfaces"]
+  },
+  {
     "id": 61,
     "name": "500ml Tiger Habit Dish Cleaner",
     "available": true,

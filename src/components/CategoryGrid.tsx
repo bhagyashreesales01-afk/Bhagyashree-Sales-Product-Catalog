@@ -20,6 +20,8 @@ const getCategoryIcon = (category: string) => {
       return <Sparkles className={`${common} text-purple-600`} />;
     case 'boric powder': // ✅ new category
       return <Box className={`${common} text-teal-600`} />;
+    case 'dusters': // ✅ new category
+      return <Sparkles className={`${common} text-pink-600`} />;
     case 'other essentials':
       return <Box className={`${common} text-orange-600`} />;
     case 'candles':
@@ -41,6 +43,8 @@ const getCategoryImage = (category: string) => {
       return '/assets/category/cotton-mops.png';
     case 'boric powder': // ✅ new category
       return '/assets/category/boric-powder.png';
+    case 'dusters': // ✅ new category
+      return '/assets/category/dusters.png';
     case 'other essentials':
       return '/assets/category/others-essentials.png';
     case 'candles':
@@ -99,8 +103,8 @@ const CategoryGrid: React.FC<CategoryGridProps> = ({ categories, onCategorySelec
 
   return (
     <div className="mb-4 md:mb-6">
-      {/* Compact 4-up on mobile, scales up on larger screens */}
-      <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-y-3 md:gap-y-4 gap-x-2 md:gap-x-3">
+      {/* Compact 3-up on mobile, scales up on larger screens */}
+      <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-y-3 md:gap-y-4 gap-x-2 md:gap-x-3">
         {sortedCategories.map((category) => (
           <CategoryTile
             key={category}

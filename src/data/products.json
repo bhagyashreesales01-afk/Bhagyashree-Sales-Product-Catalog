@@ -935,6 +935,17 @@
     ]
   },
   {
+    "id":200,
+  "category":"Brooms",
+  "name":"Comfy Plastic Broom",
+  "MRP":"215",
+  "Selling rate":"110",
+  "Usage/Application":"Dust sweeping",
+  "images":["/assets/products/brooms/comfy-plastic-broom.jpg"],
+  "features":["High quality floor broom", "Very Durable"]
+  },
+
+  {
     "id": 81,
     "name": "Galaxy Cotton Mop",
     "category": "Cotton Mops",
@@ -1120,6 +1131,18 @@
     "pack_contain": "1 piece",
     "mop_head_material": "Cotton"
   },
+  {
+    "id":90,
+    "name":"Floor Duster D3",
+    "available":true,
+    "Packaging_Size":"12 pieces",
+    "category":"Dusters",
+    "Selling rate":"19",
+    "images":["/assets/products/dusters/Floor-duster-D3.jpg"],
+    "features":["Very Durable floor duster cloth","Suitable for smooth & rough flooring"],
+    "Usage/Application":"Floor Dusting &  Cleaning"
+  },
+
   {
     "id": 101,
     "name": "20Gm Sarvodaya Boric Acid Powder",

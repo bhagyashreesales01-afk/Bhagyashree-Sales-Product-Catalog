@@ -23,7 +23,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   // Check if we need to show selling rate instead of MRP
   const showSellingRate =
-    product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55);
+    (product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55)) ||
+    (product.category === 'Dusters' && product.id >= 90 && product.id <= 98);
 
   return (
     <Link
@@ -77,6 +78,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           {/* Packaging / Candle size */}
           {product.category !== 'Floor Wiper' &&
             product.category !== 'Candles' &&
+            product.category !== 'Dusters' &&
             product.Packaging_Size && (
               <span className="text-xs lg:text-sm text-gray-600 bg-green-100 px-2 py-1 rounded-md font-medium inline-block w-fit">
                 {product.Packaging_Size}

@@ -20,7 +20,7 @@ export const useImagePreloader = ({
 
   useEffect(() => {
     const preloadImages = async () => {
-      // Get all unique image URLs from products
+      // Get all unique image URLs
       const imageUrls = products.reduce((urls: string[], product) => {
         if (product.images && product.images.length > 0) {
           urls.push(...product.images);
@@ -28,14 +28,11 @@ export const useImagePreloader = ({
         return urls;
       }, []);
 
-      // Remove duplicates
       const uniqueImageUrls = [...new Set(imageUrls)];
-      
+
       if (uniqueImageUrls.length === 0) {
-        // If no images to preload, just wait for minimum time
-        setTimeout(() => {
-          setIsLoading(false);
-        }, minLoadingTime);
+        // No images, just wait for min time
+        setTimeout(() => setIsLoading(false), minLoadingTime);
         return;
       }
 
@@ -44,38 +41,36 @@ export const useImagePreloader = ({
 
       // Create promises for each image
       const imagePromises = uniqueImageUrls.map((url) => {
-        return new Promise<void>((resolve, reject) => {
+        return new Promise<void>((resolve) => {
           const img = new Image();
-          
+
           img.onload = () => {
             loadedCount++;
             setLoadingProgress((loadedCount / totalImages) * 100);
             resolve();
           };
-          
+
           img.onerror = () => {
             loadedCount++;
             setLoadingProgress((loadedCount / totalImages) * 100);
-            resolve(); // Resolve even on error to continue loading
+            resolve(); // Continue even if failed
           };
-          
+
           img.src = url;
         });
       });
 
-      // Start minimum loading time timer
+      // Run timer alongside image loading
       const minTimePromise = new Promise<void>((resolve) => {
         setTimeout(resolve, minLoadingTime);
       });
 
       try {
-        // Wait for both image preloading and minimum time
-        await Promise.all([
-          Promise.all(imagePromises),
-          minTimePromise
-        ]);
+        // Wait for both
+        await Promise.allSettled(imagePromises);
+        await minTimePromise;
       } catch (error) {
-        console.warn('Some images failed to preload:', error);
+        console.warn('Image preload error:', error);
       } finally {
         setIsLoading(false);
       }

@@ -143,7 +143,7 @@ const AboutUs: React.FC = () => {
                   <Phone className="w-4 h-4 lg:w-5 lg:h-5 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-xs lg:text-sm">Phone</h4>
-                    <p className="text-xs lg:text-sm text-gray-600">+91 98765 43210</p>
+                    <p className="text-xs lg:text-sm text-gray-600">+91 9359102181</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

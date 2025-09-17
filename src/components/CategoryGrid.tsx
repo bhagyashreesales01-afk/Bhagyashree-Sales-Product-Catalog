@@ -18,10 +18,12 @@ const getCategoryIcon = (category: string) => {
       return <Droplets className={`${common} text-blue-600`} />;
     case 'cotton mops':
       return <Sparkles className={`${common} text-purple-600`} />;
-    case 'boric powder': // ✅ new category
+    case 'boric powder':
       return <Box className={`${common} text-teal-600`} />;
-    case 'dusters': // ✅ new category
+    case 'dusters':
       return <Sparkles className={`${common} text-pink-600`} />;
+    case 'brooms': // ✅ new category
+      return <Box className={`${common} text-green-600`} />;
     case 'other essentials':
       return <Box className={`${common} text-orange-600`} />;
     case 'candles':
@@ -41,10 +43,12 @@ const getCategoryImage = (category: string) => {
       return '/assets/category/floor-wiper.png';
     case 'cotton mops':
       return '/assets/category/cotton-mops.png';
-    case 'boric powder': // ✅ new category
+    case 'boric powder':
       return '/assets/category/boric-powder.png';
-    case 'dusters': // ✅ new category
+    case 'dusters':
       return '/assets/category/dusters.png';
+    case 'brooms': // ✅ new category
+      return '/assets/category/broom.webp';
     case 'other essentials':
       return '/assets/category/others-essentials.png';
     case 'candles':

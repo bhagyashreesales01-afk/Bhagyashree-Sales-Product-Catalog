@@ -25,7 +25,7 @@ const Footer = () => {
                 >
                   Bhagyashree Sales
                 </h3>
-                <p className="text-xs text-gray-300">Since 2013</p>
+                <p className="text-xs text-gray-300">Since 2011</p>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed mb-4">
@@ -72,16 +72,10 @@ const Footer = () => {
                   <p className="text-sm text-gray-300">Email</p>
                   <div className="space-y-1">
                     <a 
-                      href="mailto:info@bhagyashreesales.com" 
+                      href="mailto:dhirajpurohit29@gmail.com" 
                       className="block text-sm text-white hover:text-blue-400 transition-colors"
                     >
-                      info@bhagyashreesales.com
-                    </a>
-                    <a 
-                      href="mailto:support@bhagyashreesales.com" 
-                      className="block text-sm text-white hover:text-blue-400 transition-colors"
-                    >
-                      support@bhagyashreesales.com
+                       dhirajpurohit29@gmail.com
                     </a>
                   </div>
                 </div>
@@ -125,29 +119,6 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div>
-              <h5 className="text-sm font-semibold text-white mb-3">Quick Links</h5>
-              <div className="space-y-2">
-                <a 
-                  href="/about" 
-                  className="block text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  About Us
-                </a>
-                <a 
-                  href="#footer" 
-                  className="block text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Contact
-                </a>
-                <a 
-                  href="/" 
-                  className="block text-sm text-gray-300 hover:text-white transition-colors"
-                >
-                  Products
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -158,13 +129,13 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div className="text-center sm:text-left">
               <p className="text-sm text-gray-400">
-                © 2024 Bhagyashree Sales. All rights reserved.
+                © 2011 - 2025 Bhagyashree Sales. All rights reserved.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-right">
               <p className="text-xs text-gray-500">
-                Established 2013 • Maharashtra, India
+                Established 2011 • Maharashtra, India
               </p>
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>

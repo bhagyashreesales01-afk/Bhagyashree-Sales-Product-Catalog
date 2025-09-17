@@ -150,7 +150,7 @@ const AboutUs: React.FC = () => {
                   <Mail className="w-4 h-4 lg:w-5 lg:h-5 text-purple-600 mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-gray-900 text-xs lg:text-sm">Email</h4>
-                    <p className="text-xs lg:text-sm text-gray-600">info@bhagyashreesales.com</p>
+                    <p className="text-xs lg:text-sm text-gray-600">dhirajpurohit29@gmail.com</p>
                   </div>
                 </div>
               </div>

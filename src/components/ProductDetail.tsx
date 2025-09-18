@@ -91,10 +91,10 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ products }) => {
     ...(product.product_brand ? [{ label: 'Brand', value: product.product_brand }] : []),
     ...(product.brand ? [{ label: 'Brand', value: product.brand }] : []),
   ];
-
-  // Check if we should show only Selling Rate
-  const showOnlySellingRate =
-    product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55);
+// Check if we should show only Selling Rate
+const showOnlySellingRate =
+  (product.category === 'Floor Wiper' && (product.id === 54 || product.id === 55)) ||
+  (product.category === 'Dusters' && product.id >= 90 && product.id <= 98);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

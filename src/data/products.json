@@ -479,7 +479,7 @@
       "Natural Anti Bactarial"
     ]
   },
-   {
+  {
     "id": 21,
     "name": "1L Glaze Acid Bathroom Cleaners",
     "available": true,
@@ -724,24 +724,36 @@
     "blade_length": "9 inch"
   },
   {
-    "id":54,
-    "name":"Diamond Ceiling Broom",
-    "available":true,
-    "Usage/Application":"Dusting and removiung spider web",
-    "images":["/assets/products/floor-wiper/diamond-ceiling-broom.jpg"],
-    "Selling rate":"112",
-    "category":"Floor Wiper",
-    "features":["Dusting","Removing Spider Web","Cleans various narrow surfaces"]
+    "id": 54,
+    "name": "Diamond Ceiling Broom",
+    "available": true,
+    "Usage/Application": "Dusting and removiung spider web",
+    "images": [
+      "/assets/products/floor-wiper/diamond-ceiling-broom.jpg"
+    ],
+    "Selling rate": "112",
+    "category": "Floor Wiper",
+    "features": [
+      "Dusting",
+      "Removing Spider Web",
+      "Cleans various narrow surfaces"
+    ]
   },
-    {
-    "id":55,
-    "name":"Round Ceiling Broom",
-    "available":true,
-    "Usage/Application":"Dusting and removiung spider web",
-    "images":["/assets/products/floor-wiper/round-ceiling-broom.jpg"],
-    "Selling rate":"110",
-    "category":"Floor Wiper",
-    "features":["Dusting","Removing Spider Web","Cleans various narrow surfaces"]
+  {
+    "id": 55,
+    "name": "Round Ceiling Broom",
+    "available": true,
+    "Usage/Application": "Dusting and removiung spider web",
+    "images": [
+      "/assets/products/floor-wiper/round-ceiling-broom.jpg"
+    ],
+    "Selling rate": "110",
+    "category": "Floor Wiper",
+    "features": [
+      "Dusting",
+      "Removing Spider Web",
+      "Cleans various narrow surfaces"
+    ]
   },
   {
     "id": 61,
@@ -764,7 +776,8 @@
       "No Food Residue",
       "Tough on Oil Stair, Soft on Hand"
     ],
-    "images": ["/assets/products/dish-cleaner/tiger-habit-dish-wash-liquid.jpg",
+    "images": [
+      "/assets/products/dish-cleaner/tiger-habit-dish-wash-liquid.jpg",
       "/assets/products/dish-cleaner/tiger-habit-dish-cleaner-500ml-1697455004633-500x500.webp",
       "/assets/products/dish-cleaner/tiger-habit-dish-cleaner-500ml-1697455012188-500x500.webp"
     ]
@@ -935,16 +948,20 @@
     ]
   },
   {
-    "id":200,
-  "category":"Brooms",
-  "name":"Comfy Plastic Broom",
-  "MRP":"215",
-  "Selling rate":"110",
-  "Usage/Application":"Dust sweeping",
-  "images":["/assets/products/brooms/comfy-plastic-broom.jpg"],
-  "features":["High quality floor broom", "Very Durable"]
+    "id": 200,
+    "category": "Brooms",
+    "name": "Comfy Plastic Broom",
+    "MRP": "215",
+    "Selling rate": "110",
+    "Usage/Application": "Dust sweeping",
+    "images": [
+      "/assets/products/brooms/comfy-plastic-broom.jpg"
+    ],
+    "features": [
+      "High quality floor broom",
+      "Very Durable"
+    ]
   },
-
   {
     "id": 81,
     "name": "Galaxy Cotton Mop",
@@ -1132,17 +1149,164 @@
     "mop_head_material": "Cotton"
   },
   {
-    "id":90,
-    "name":"Floor Duster D3",
-    "available":true,
-    "Packaging_Size":"12 pieces",
-    "category":"Dusters",
-    "Selling rate":"19",
-    "images":["/assets/products/dusters/Floor-duster-D3.jpg"],
-    "features":["Very Durable floor duster cloth","Suitable for smooth & rough flooring"],
-    "Usage/Application":"Floor Dusting &  Cleaning"
+    "id": 92,
+    "name": "Floor Duster D3",
+    "available": true,
+    "Packaging_Size": "12 pieces",
+    "category": "Dusters",
+    "color": "Grey",
+    "Selling rate": "19 per piece",
+    "images": [
+      "/assets/products/dusters/Floor-duster-D3.jpg"
+    ],
+    "features": [
+      "Very Durable floor duster cloth",
+      "Suitable for smooth & rough flooring"
+    ],
+    "Usage/Application": "Floor Dusting &  Cleaning"
   },
-
+  {
+    "id": 90,
+    "name": "Floor Duster D1",
+    "available": true,
+    "Packaging_Size": "12 pieces",
+    "category": "Dusters",
+    "color": "Light Grey",
+    "Selling rate": "17 per piece",
+    "images": [
+      "/assets/products/dusters/floor-duster-d1.jpg"
+    ],
+    "features": [
+      "Very Durable floor duster cloth",
+      "Suitable for smooth & rough flooring"
+    ],
+    "Usage/Application": "Floor Dusting &  Cleaning"
+  },
+  {
+    "id": 91,
+    "name": "Floor Duster D2",
+    "available": true,
+    "Packaging_Size": "12 pieces",
+    "category": "Dusters",
+    "color": "Light Grey with black strips",
+    "Selling rate": "18 per piece",
+    "images": [
+      "/assets/products/dusters/floor-duster-d2.jpg"
+    ],
+    "features": [
+      "Very Durable floor duster cloth",
+      "Suitable for smooth & rough flooring"
+    ],
+    "Usage/Application": "Floor Dusting &  Cleaning"
+  },
+  {
+    "id": 93,
+    "name": "Orange duster OBD",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "12 per piece",
+    "color": "Light Orange",
+    "features": [
+      "Very Durable surfaces dusting cloth",
+      "Suitable for smooth surfaces"
+    ],
+    "Usage/Application": "Smoooth Surfaces dusting and cleaning",
+    "images": [
+      "/assets/products/dusters/Orange duster OBD.jpg"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Yellow Duster Heavy",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "19 per piece",
+    "color": "Yellow",
+    "features": [
+      "Very Durable surfaces dusting cloth",
+      "Suitable for smooth surfaces",
+      "Easy to clean large surfaces quickly"
+    ],
+    "Usage/Application": "Smoooth Surfaces dusting and cleaning",
+    "images": [
+      "/assets/products/dusters/Yellow Duster Heavy .jpg"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Kitchen Duster big EBD",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "12 per piece",
+    "color": "White base with checkered pattern",
+    "features": [
+      "Large size",
+      "Used to wipe utensils dry",
+      "Thick texture that wipes the utensils easily"
+    ],
+    "Usage/Application": "For kitchen utensils cleaning and dusting purposes",
+    "images": [
+      "/assets/products/dusters/Kitchen Duster big EBD.jpg"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Kitchen Duster small ESD",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "9 per piece",
+    "color": "White base with checkered pattern",
+    "features": [
+      "Small size",
+      "Used to wipe utensils dry",
+      "Thick texture that wipes the utensils easily"
+    ],
+    "Usage/Application": "For kitchen utensils cleaning and dusting purposes",
+    "images": [
+      "/assets/products/dusters/Kitchen-duster-small-esd.jpg"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Glass Duster GBD ",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "19 per piece",
+    "color": "White base with strip pattern",
+    "features": [
+      "Premium Cotton Blend: Soft, lightweight, and gentle on glass surfaces",
+      "Highly Absorbent: Quickly soaks up water and dust",
+      "Multipurpose: Ideal for glass, mirrors, screens, and delicate surfaces.",
+      "Easy to Wash & Reuse: Machine-washable, retains softness after multiple washes"
+    ],
+    "Usage/Application": "Glass Cleaning",
+    "images": [
+      "/assets/products/dusters/Glass Duster GBD.jpg"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Microfiber cloth ",
+    "available": true,
+    "category": "Dusters",
+    "Packaging_Size": "12 pieces",
+    "Selling rate": "40 per piece",
+    "color": "red,blue,brown,purple",
+    "features": [
+      "Ultra-fine synthetic fibers for deep cleaning",
+      "Soft and non-abrasive, safe on delicate surfaces",
+      "Highly absorbent, soaks up water quickly"
+    ],
+    "Usage/Application": "Delicate surfaces Cleaning",
+    "images": [
+      "/assets/products/dusters/microfibre.jpg"
+    ]
+  },
   {
     "id": 101,
     "name": "20Gm Sarvodaya Boric Acid Powder",

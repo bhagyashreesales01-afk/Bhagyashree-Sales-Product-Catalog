@@ -19,64 +19,58 @@ export const useImagePreloader = ({
   const [loadingProgress, setLoadingProgress] = useState(0);
 
   useEffect(() => {
-    const preloadImages = async () => {
-      // Get all unique image URLs
-      const imageUrls = products.reduce((urls: string[], product) => {
-        if (product.images && product.images.length > 0) {
-          urls.push(...product.images);
-        }
-        return urls;
-      }, []);
+    let isCancelled = false; // ✅ prevent memory leaks
 
+    const preloadImages = async () => {
+      // Collect all unique image URLs
+      const imageUrls = products.flatMap(p => p.images ?? []);
       const uniqueImageUrls = [...new Set(imageUrls)];
 
       if (uniqueImageUrls.length === 0) {
-        // No images, just wait for min time
-        setTimeout(() => setIsLoading(false), minLoadingTime);
+        setTimeout(() => {
+          if (!isCancelled) setIsLoading(false);
+        }, minLoadingTime);
         return;
       }
 
       let loadedCount = 0;
       const totalImages = uniqueImageUrls.length;
 
-      // Create promises for each image
       const imagePromises = uniqueImageUrls.map((url) => {
         return new Promise<void>((resolve) => {
           const img = new Image();
 
-          img.onload = () => {
+          const handleLoad = () => {
             loadedCount++;
-            setLoadingProgress((loadedCount / totalImages) * 100);
+            if (!isCancelled) {
+              setLoadingProgress(Math.round((loadedCount / totalImages) * 100));
+            }
             resolve();
           };
 
-          img.onerror = () => {
-            loadedCount++;
-            setLoadingProgress((loadedCount / totalImages) * 100);
-            resolve(); // Continue even if failed
-          };
-
+          img.onload = handleLoad;
+          img.onerror = handleLoad;
           img.src = url;
         });
       });
 
-      // Run timer alongside image loading
       const minTimePromise = new Promise<void>((resolve) => {
         setTimeout(resolve, minLoadingTime);
       });
 
       try {
-        // Wait for both
         await Promise.allSettled(imagePromises);
         await minTimePromise;
-      } catch (error) {
-        console.warn('Image preload error:', error);
       } finally {
-        setIsLoading(false);
+        if (!isCancelled) setIsLoading(false);
       }
     };
 
     preloadImages();
+
+    return () => {
+      isCancelled = true; // ✅ cleanup
+    };
   }, [products, minLoadingTime]);
 
   return { isLoading, loadingProgress };

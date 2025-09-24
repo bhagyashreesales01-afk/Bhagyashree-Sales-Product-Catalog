@@ -1637,5 +1637,21 @@
     "Usage/Application":"Toilet Cleaning",
     "images":["/assets/products/other-essentials/toilet-brush-1697791661208-500x500.webp",
   "/assets/products/other-essentials/toilet-brush-1697791664162-500x500.webp"]
+  },
+  {
+    "id":117,
+    "name":"100Gm Sarvodaya Bleaching Powder",
+    "brand":"Sarvodaya",
+    "available":true,
+    "category":"Other Essentials",
+    "form":"Powder",
+    "features":["Best For-- bathroom,Floors,Tolites,Tiles"],
+    "images":["/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500 (1).webp",
+  "/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500.webp"],
+  "MRP":"",
+  "Selling rate":"",
+  "Usage/Application":"Cleaning Floors",
+  "Packaging_Size":"100gm",
+  "grade_standard":"Analytical Grade"
   } 
 ]

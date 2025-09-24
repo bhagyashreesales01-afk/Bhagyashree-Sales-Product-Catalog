@@ -1555,5 +1555,87 @@
     ],
     "form": "Sponge",
     "Packaging_Type": "Packet"
-  }
+  },
+  {
+    "id": 112,
+    "name": "Pioneer Plastic Broom",
+    "available": true,
+    "brand": "Pioneer",
+    "category": "Other Essentials",
+    "images": [
+      "/assets/products/other-essentials/pioneer-plastic-broom-1000x1000.webp",
+      "/assets/products/other-essentials/bathroom-kharata-1697791682563-500x500.webp"
+    ],
+    "color": "Red",
+    "Selling rate": "52",
+    "MRP": "95",
+    "features": [
+      "Water proof",
+      "Very Durable",
+      "Rinses off wet surfaces"
+    ],
+    "Usage/Application": "Bathroom Floor Cleaning",
+    "material": "Plastic"
+  },
+    {
+    "id": 113,
+    "name": "Zigzag Karata Plastic Broom",
+    "available": true,
+    "brand": "Zigzag",
+    "category": "Other Essentials",
+    "images": [
+      "/assets/products/other-essentials/bathroom-kharata-1697791669862-500x500.webp",
+      "/assets/products/other-essentials/zigzag-plastic-broom-500x500.webp"
+    ],
+    "color": "Red",
+    "Selling rate": "57",
+    "MRP": "110",
+    "features": [
+      "Water proof",
+      "Very Durable",
+      "Rinses off wet surfaces"
+    ],
+    "Usage/Application": "Bathroom Floor Cleaning",
+    "material": "Plastic"
+  },
+  {
+    "id":114,
+    "name":"Max Plastic Dust Pan",
+    "available":true,
+    "brand":"Max",
+    "color":"Red,Grey,Green,Blue,Pink,Purple",
+    "category":"Other Essentials",
+    "features":["Color In stock-- Grey, Blue, Green, Purple","2L Capacity","Size 8 inch"],
+    "images":["/assets/products/other-essentials/dust-pan-1697791711542-500x500.webp","/assets/products/other-essentials/dust-pan-1697791716610-500x500.webp",
+  "/assets/products/other-essentials/dust-pan-1697791719103-500x500.webp"],
+  "MRP":""
+  },
+  {
+    "id":115,
+    "name":"Rubber Toilet Plunger",
+    "available":true,
+    "material":"Rubber",
+    "shape":"Round",
+    "category":"Other Essentials",
+    "Selling rate":"",
+    "MRP":"",
+    "Usage/Application":"Toilet Cleaning",
+    "images":["/assets/products/other-essentials/toilet-pump-1697791721768-1000x1000.webp",
+  "/assets/products/other-essentials/toilet-pump-1697791726976-500x500.webp"],
+  "features":["Rubber Toilet Plunger","Durable"]
+  },
+  {
+    "id":116,
+    "available":true,
+    "name":"Double Hocky Toilet Brush",
+    "category":"Other Essentials",
+    "MRP":"",
+    "Selling rate":"",
+    "color":"Blue",
+    "material":"Plastic",
+    "features":["Cleans Toilet surfaces easily"],
+    "Usage/Application":"Toilet Cleaning",
+    "images":["/assets/products/other-essentials/toilet-brush-1697791661208-500x500.webp",
+  "/assets/products/other-essentials/toilet-brush-1697791664162-500x500.webp"]
+  } 
 ]

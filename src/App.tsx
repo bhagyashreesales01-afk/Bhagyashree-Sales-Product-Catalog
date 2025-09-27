@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Package, ArrowLeft } from 'lucide-react';
-import  LoadingScreen  from './components/LoadingScreen'; // ✅ fixed import
+import LoadingScreen from './components/LoadingScreen';
 import { useImagePreloader } from './hooks/useImagePreloader';
 import CategoryGrid from './components/CategoryGrid';
 import productsData from './data/products.json';
@@ -9,26 +9,30 @@ import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import Header from './components/Header';
-import { Product } from './types/Product'; // ✅ simplified path
+import { Product } from './types/Product';
 import AboutUs from './pages/AboutUs';
 
 function App() {
   const products: Product[] = productsData.map(p => ({
     ...p,
-    available: p.available ?? false,   // ✅ ensures boolean
-    price: p.price ?? 'N/A',           // ✅ ensures string
-    MRP: String(p.MRP ?? 'N/A'),       // ✅ ensures string
+    available: p.available ?? false,
+    price: p.price ?? 'N/A',
+    MRP: String(p.MRP ?? 'N/A'),
   }));
 
   const [globalSearchTerm, setGlobalSearchTerm] = useState('');
 
-  const { isLoading } = useImagePreloader({ 
+  const categories = useMemo(() => Array.from(new Set(products.map(p => p.category))), [products]);
+
+  // ✅ Preload both products and category images
+  const { isLoading, loadingProgress, preloadedImages } = useImagePreloader({ 
     products, 
+    categories,
     minLoadingTime: 3500 
   });
 
   if (isLoading) {
-    return <LoadingScreen />;
+    return <LoadingScreen progress={loadingProgress} />;
   }
 
   return (
@@ -40,6 +44,8 @@ function App() {
           <Route path="/" element={
             <HomePage 
               products={products} 
+              categories={categories}
+              preloadedImages={preloadedImages}
               globalSearchTerm={globalSearchTerm} 
               setGlobalSearchTerm={setGlobalSearchTerm} 
             />} 
@@ -56,16 +62,20 @@ function App() {
   );
 }
 
-function HomePage({ products, globalSearchTerm, setGlobalSearchTerm }: { 
+function HomePage({ 
+  products, 
+  categories,
+  preloadedImages,
+  globalSearchTerm, 
+  setGlobalSearchTerm 
+}: { 
   products: Product[]; 
+  categories: string[];
+  preloadedImages?: Record<string, HTMLImageElement>;
   globalSearchTerm: string; 
   setGlobalSearchTerm: (term: string) => void; 
 }) {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
-  const categories = useMemo(() => {
-    return Array.from(new Set(products.map(product => product.category)));
-  }, [products]);
 
   const effectiveSearchTerm = globalSearchTerm;
   const isSearchMode = globalSearchTerm.trim() !== '';
@@ -169,6 +179,7 @@ function HomePage({ products, globalSearchTerm, setGlobalSearchTerm }: {
           <CategoryGrid 
             categories={categories} 
             onCategorySelect={handleCategorySelect}
+            preloadedImages={preloadedImages} // ✅ pass preloaded category images
           />
 
           <div className="mb-4 lg:mb-6">

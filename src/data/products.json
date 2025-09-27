@@ -664,8 +664,8 @@
     "name": "Marigold Plastic Floor Wiper",
     "category": "Floor Wiper",
     "images": [
+      "/assets/products/floor-wiper/marigold-floor-wiper.jpg",
       "/assets/products/floor-wiper/marigold-plastic-floor-wiper-125x125.webp",
-      "/assets/products/floor-wiper/wiper-1697791532366-500x500.webp",
       "/assets/products/floor-wiper/wiper-1697791539976-125x125.webp"
     ],
     "price": "₹180",
@@ -686,8 +686,8 @@
     "name": "Tower Plastic Floor Wiper",
     "category": "Floor Wiper",
     "images": [
+      "/assets/products/floor-wiper/Tower-floor-wiper-new.jpg",
       "/assets/products/floor-wiper/tower-plastic-floor-wiper-1000x1000.webp",
-      "/assets/products/floor-wiper/tower-plastic-floor-wiper-125x125.webp",
       "/assets/products/floor-wiper/floor-wiper-1697791570107-125x125.webp"
     ],
     "available": true,
@@ -947,21 +947,172 @@
       "/assets/products/candles/5inch-white-rajdeep-candles-500x500 (2).webp"
     ]
   },
+{
+  "id": 200,
+  "category": "Brooms",
+  "name": "Comfy Plastic Broom",
+  "MRP": "215",
+  "Selling rate": "110",
+  "Usage/Application": "Dust sweeping",
+  "images": [
+    "/assets/products/brooms/comfy-plastic-broom.jpg"
+  ],
+  "brand":"Clean Mart",
+  "features": [
+    "High quality floor broom",
+    "Very Durable"
+  ],
+  "material":  "Sturdy PVC Handle",
+  "package": "Single Piece",
+  "available": true
+},
   {
-    "id": 200,
-    "category": "Brooms",
-    "name": "Comfy Plastic Broom",
-    "MRP": "215",
-    "Selling rate": "110",
-    "Usage/Application": "Dust sweeping",
-    "images": [
-      "/assets/products/brooms/comfy-plastic-broom.jpg"
-    ],
-    "features": [
-      "High quality floor broom",
-      "Very Durable"
-    ]
-  },
+  "id": 201,
+  "available": true,
+  "name": "Tiger Swachham Grass Broom",
+  "category": "Brooms",
+  "MRP": "200",
+  "brand":"Tiger",
+  "Selling rate": "120",
+  "material": "High-Quality Grass and Plastic Handle",
+  "features": [
+    "Strong grass bristles for long-lasting use",
+    "Lightweight and easy to handle",
+    "Ideal for indoor and outdoor sweeping",
+    "Comfortable grip for daily cleaning"
+  ],
+  "Usage/Application": "Floor and outdoor area cleaning",
+  "package": "Single Piece",
+  "images": [
+    "/assets/products/brooms/Tiger_Swachham_Grass.jpg"
+  ]
+},
+{
+  "id": 202,
+  "available": true,
+  "brand": "Tiger",
+  "category": "Brooms",
+  "name": "Tiger Jumbo Grass Broom",
+  "MRP": "180",
+  "Selling rate": "115",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/Tiger-Jumbo.jpg"
+  ],
+  "features": [
+    "Extra thick grass bristles for heavy-duty cleaning",
+    "Long handle for comfortable sweeping",
+    "Suitable for both indoor and outdoor surfaces",
+    "Lightweight yet highly durable"
+  ],
+  "material": "Premium Grass with Plastic Handle",
+  "package": "Single Piece"
+},
+{
+  "id": 203,
+  "available": true,
+  "brand": "Kick",
+  "category": "Brooms",
+  "name": "Mack Grass Broom",
+  "MRP": "130",
+  "Selling rate": "70",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/Mack-broom.jpg"
+  ],
+  "features": [
+    "Durable grass bristles for everyday cleaning",
+    "Lightweight handle for easy use",
+    "Ideal for indoor and outdoor floors",
+    "Compact design for easy storage"
+  ],
+  "material": "Natural Grass with Plastic Handle",
+  "package": "Single Piece"
+},
+{
+  "id": 204,
+  "available": true,
+  "brand": "SBC",
+  "category": "Brooms",
+  "name": "Jumbo Ktc Grass Broom",
+  "MRP": "150",
+  "Selling rate": "75",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/sbc-broom.jpg"
+  ],
+  "features": [
+    "Thick grass bristles for heavy-duty cleaning",
+    "Long handle for comfortable sweeping",
+    "Suitable for indoor and outdoor floors",
+    "Lightweight and durable for daily use"
+  ],
+  "material": "Natural Grass with Plastic Handle",
+  "package": "Single Piece"
+},
+{
+  "id": 205,
+  "available": true,
+  "brand": "Mr.Kleen",
+  "category": "Brooms",
+  "name": "Mr.Kleen Steel Grass Broom",
+  "MRP": "180",
+  "Selling rate": "80",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/mr_kleen_broom.jpg"
+  ],
+  "features": [
+    "Durable steel bristles for tough cleaning",
+    "Long handle for easy handling",
+    "Ideal for indoor and outdoor floors",
+    "Lightweight yet sturdy for daily use"
+  ],
+  "material": "Steel Bristles with Plastic Handle",
+  "package": "Single Piece"
+},
+{
+  "id": 206,
+  "available": true,
+  "brand": "Apollo",
+  "category": "Brooms",
+  "name": "Apollo Grass Broom",
+  "MRP": "210",
+  "Selling rate": "112",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/apollo.jpg"
+  ],
+  "features": [
+    "High-quality grass bristles for effective cleaning",
+    "Long handle for comfortable use",
+    "Suitable for indoor and outdoor floors",
+    "Lightweight and durable for daily use"
+  ],
+  "material": "Natural Grass with Plastic Handle",
+  "package": "Single Piece"
+},
+{
+  "id": 207,
+  "available": true,
+  "brand": "Kalyani",
+  "category": "Brooms",
+  "name": "Kalyani Grass Broom",
+  "MRP": "250",
+  "Selling rate": "135",
+  "Usage/Application": "Floor and outdoor sweeping",
+  "images": [
+    "/assets/products/brooms/broom-1697791701530-500x500.webp"
+  ],
+  "features": [
+    "Extra thick grass bristles for heavy-duty cleaning",
+    "Long handle for ease of use",
+    "Ideal for indoor and outdoor floors",
+    "Durable and lightweight for everyday cleaning"
+  ],
+  "material": "Natural Grass with Plastic Handle",
+  "package": "Single Piece"
+},
   {
     "id": 81,
     "name": "Galaxy Cotton Mop",
@@ -1608,7 +1759,8 @@
     "features":["Color In stock-- Grey, Blue, Green, Purple","2L Capacity","Size 8 inch"],
     "images":["/assets/products/other-essentials/dust-pan-1697791711542-500x500.webp","/assets/products/other-essentials/dust-pan-1697791716610-500x500.webp",
   "/assets/products/other-essentials/dust-pan-1697791719103-500x500.webp"],
-  "MRP":""
+  "MRP":"90",
+  "Selling rate":"32"
   },
   {
     "id":115,
@@ -1617,8 +1769,7 @@
     "material":"Rubber",
     "shape":"Round",
     "category":"Other Essentials",
-    "Selling rate":"",
-    "MRP":"",
+    "Selling rate":"32",
     "Usage/Application":"Toilet Cleaning",
     "images":["/assets/products/other-essentials/toilet-pump-1697791721768-1000x1000.webp",
   "/assets/products/other-essentials/toilet-pump-1697791726976-500x500.webp"],
@@ -1629,8 +1780,8 @@
     "available":true,
     "name":"Double Hocky Toilet Brush",
     "category":"Other Essentials",
-    "MRP":"",
-    "Selling rate":"",
+    "MRP":"95",
+    "Selling rate":"54",
     "color":"Blue",
     "material":"Plastic",
     "features":["Cleans Toilet surfaces easily"],
@@ -1648,10 +1799,27 @@
     "features":["Best For-- bathroom,Floors,Tolites,Tiles"],
     "images":["/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500 (1).webp",
   "/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500.webp"],
-  "MRP":"",
-  "Selling rate":"",
+  "MRP":"30",
+  "Selling rate":"15",
   "Usage/Application":"Cleaning Floors",
   "Packaging_Size":"100gm",
   "grade_standard":"Analytical Grade"
-  } 
+  } ,
+  {
+  "id": 118,
+  "available": true,
+  "name": "Stainless Steel Scrubber",
+  "category": "Other Essentials",
+  "MRP": "15 (per piece)",
+  "Selling rate": "9 (per piece)",
+  "package": "12 pcs strip",
+  "color": "Silver",
+  "material": "Stainless Steel",
+  "features": ["Removes tough stains", "Durable and rust-free", "Ideal for utensils and kitchen cleaning"],
+  "Usage/Application": "Utensil and kitchen cleaning",
+  "images": [
+    "/assets/products/other-essentials/Stainless_steel_scrubber.jpg"
+  ]
+}
+
 ]

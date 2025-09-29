@@ -11,7 +11,7 @@ import ProductDetail from './components/ProductDetail';
 import Header from './components/Header';
 import { Product } from './types/Product';
 import AboutUs from './pages/AboutUs';
-
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   const products: Product[] = productsData.map(p => ({
     ...p,
@@ -40,7 +40,9 @@ function App() {
       <Header searchTerm={globalSearchTerm} onSearchChange={setGlobalSearchTerm} />
 
       <div className="bg-[#E8F9FF] min-h-screen">
+        <ScrollToTop />
         <Routes>
+          
           <Route path="/" element={
             <HomePage 
               products={products} 

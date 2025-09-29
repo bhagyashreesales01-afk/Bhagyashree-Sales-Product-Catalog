@@ -94,7 +94,7 @@ const Footer = () => {
               <div>
                 <p className="text-sm text-white leading-relaxed">
                   Flat No 305, Sr No 36/1/A,<br />
-                  Good Earth Apat, Akurdi,<br />
+                  Good Earth Apartment, Akurdi,<br />
                   Pune-411035, Maharashtra, India
                 </p>
               </div>

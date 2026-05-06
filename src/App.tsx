@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Package, ArrowLeft } from 'lucide-react';
 import LoadingScreen from './components/LoadingScreen';
 import { useImagePreloader } from './hooks/useImagePreloader';
+import { useImagePrefetcher } from './hooks/useImagePrefetcher';
 import CategoryGrid from './components/CategoryGrid';
 import productsData from './data/products.json';
 import Footer from './components/Footer';
@@ -25,11 +26,14 @@ function App() {
   const categories = useMemo(() => Array.from(new Set(products.map(p => p.category))), [products]);
 
   // ✅ Preload both products and category images
-  const { isLoading, loadingProgress, preloadedImages } = useImagePreloader({ 
-    products, 
+  const { isLoading, loadingProgress, preloadedImages } = useImagePreloader({
+    products,
     categories,
-    minLoadingTime: 3500 
+    minLoadingTime: 5000
   });
+
+  // ✅ Browser prefetch for additional caching
+  useImagePrefetcher({ products, categories });
 
   if (isLoading) {
     return <LoadingScreen progress={loadingProgress} />;

@@ -40,6 +40,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           onError={(e) => {
             (e.target as HTMLImageElement).src = '/assets/placeholder.png';
           }}
+          loading="eager"
+          decoding="async"
+          crossOrigin="anonymous"
         />
       </div>
 

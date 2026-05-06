@@ -119,6 +119,9 @@ const showOnlySellingRate =
                 src={product.images[selectedImageIndex]}
                 alt={product.name}
                 className="w-full h-full object-contain p-4"
+                loading="eager"
+                decoding="async"
+                crossOrigin="anonymous"
               />
             </div>
             {product.images.length > 1 && (
@@ -137,6 +140,9 @@ const showOnlySellingRate =
                       src={image}
                       alt={`View ${index + 1}`}
                       className="w-full h-full object-contain p-2 bg-gray-50"
+                      loading="eager"
+                      decoding="async"
+                      crossOrigin="anonymous"
                     />
                   </button>
                 ))}

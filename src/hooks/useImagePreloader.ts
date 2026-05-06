@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Product } from '../types/Product';
 import { getCategoryImage } from '../components/CategoryGridHelpers';
 
-
 interface UseImagePreloaderProps {
   products: Product[];
   categories: string[];
@@ -18,7 +17,7 @@ interface UseImagePreloaderReturn {
 export const useImagePreloader = ({
   products,
   categories,
-  minLoadingTime = 3500
+  minLoadingTime = 5000
 }: UseImagePreloaderProps): UseImagePreloaderReturn => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -30,7 +29,6 @@ export const useImagePreloader = ({
     const preloadImages = async () => {
       const productUrls = products.flatMap(p => p.images ?? []);
       const categoryUrls = categories.map(c => getCategoryImage(c));
-
       const allUrls = [...new Set([...productUrls, ...categoryUrls])];
       const loadedImages: Record<string, HTMLImageElement> = {};
 
@@ -45,25 +43,38 @@ export const useImagePreloader = ({
       const promises = allUrls.map((url) => {
         return new Promise<void>((resolve) => {
           const img = new Image();
-          img.onload = () => {
+          img.loading = 'eager';
+          img.decoding = 'async';
+
+          const handleLoad = () => {
             loadedCount++;
             if (!isCancelled) {
               setLoadingProgress(Math.round((loadedCount / total) * 100));
               loadedImages[url] = img;
             }
+            cleanup();
             resolve();
           };
-          img.onerror = () => {
+
+          const handleError = () => {
             loadedCount++;
             if (!isCancelled) setLoadingProgress(Math.round((loadedCount / total) * 100));
+            cleanup();
             resolve();
           };
+
+          const cleanup = () => {
+            img.onload = null;
+            img.onerror = null;
+          };
+
+          img.onload = handleLoad;
+          img.onerror = handleError;
           img.src = url;
         });
       });
 
       const minTimePromise = new Promise<void>((resolve) => setTimeout(resolve, minLoadingTime));
-
       await Promise.allSettled(promises);
       await minTimePromise;
 

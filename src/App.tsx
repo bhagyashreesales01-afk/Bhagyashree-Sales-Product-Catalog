@@ -1,63 +1,79 @@
-import { useState, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Package, ArrowLeft } from 'lucide-react';
+
 import LoadingScreen from './components/LoadingScreen';
-import { useImagePreloader } from './hooks/useImagePreloader';
-import { useImagePrefetcher } from './hooks/useImagePrefetcher';
 import CategoryGrid from './components/CategoryGrid';
-import productsData from './data/products.json';
-import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import Header from './components/Header';
-import { Product } from './types/Product';
-import AboutUs from './pages/AboutUs';
+import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+
+import productsData from './data/products.json';
+import { Product } from './types/Product';
+
+import AboutUs from './pages/AboutUs';
+
 function App() {
-  const products: Product[] = productsData.map(p => ({
-    ...p,
-    available: p.available ?? false,
-    price: p.price ?? 'N/A',
-    MRP: String(p.MRP ?? 'N/A'),
-  }));
+  // Prepare product data once
+  const products: Product[] = useMemo(
+    () =>
+      productsData.map((p) => ({
+        ...p,
+        available: p.available ?? false,
+        price: p.price ?? 'N/A',
+        MRP: String(p.MRP ?? 'N/A'),
+      })),
+    []
+  );
 
   const [globalSearchTerm, setGlobalSearchTerm] = useState('');
 
-  const categories = useMemo(() => Array.from(new Set(products.map(p => p.category))), [products]);
-
-  // ✅ Preload both products and category images
-  const { isLoading, loadingProgress, preloadedImages } = useImagePreloader({
-    products,
-    categories,
-    minLoadingTime: 5000
-  });
-
-  // ✅ Browser prefetch for additional caching
-  useImagePrefetcher({ products, categories });
-
-  if (isLoading) {
-    return <LoadingScreen progress={loadingProgress} />;
-  }
+  const categories = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          products
+            .map((p) => p.category)
+            .filter(Boolean)
+        )
+      ),
+    [products]
+  );
 
   return (
     <div className="min-h-screen bg-[#10707A]">
-      <Header searchTerm={globalSearchTerm} onSearchChange={setGlobalSearchTerm} />
+      <Header
+        searchTerm={globalSearchTerm}
+        onSearchChange={setGlobalSearchTerm}
+      />
 
-      <div className="bg-[#E8F9FF] min-h-screen">
+      <div className="min-h-screen bg-[#E8F9FF]">
         <ScrollToTop />
+
         <Routes>
-          
-          <Route path="/" element={
-            <HomePage 
-              products={products} 
-              categories={categories}
-              preloadedImages={preloadedImages}
-              globalSearchTerm={globalSearchTerm} 
-              setGlobalSearchTerm={setGlobalSearchTerm} 
-            />} 
+          <Route
+            path="/"
+            element={
+              <HomePage
+                products={products}
+                categories={categories}
+                globalSearchTerm={globalSearchTerm}
+                setGlobalSearchTerm={setGlobalSearchTerm}
+              />
+            }
           />
-          <Route path="/product/:id" element={<ProductDetail products={products} />} />
-          <Route path="/about" element={<AboutUs />} />
+
+          <Route
+            path="/product/:id"
+            element={<ProductDetail products={products} />}
+          />
+
+          <Route
+            path="/about"
+            element={<AboutUs />}
+          />
         </Routes>
 
         <div id="footer">
@@ -68,32 +84,57 @@ function App() {
   );
 }
 
-function HomePage({ 
-  products, 
-  categories,
-  preloadedImages,
-  globalSearchTerm, 
-  setGlobalSearchTerm 
-}: { 
-  products: Product[]; 
+interface HomePageProps {
+  products: Product[];
   categories: string[];
-  preloadedImages?: Record<string, HTMLImageElement>;
-  globalSearchTerm: string; 
-  setGlobalSearchTerm: (term: string) => void; 
-}) {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  globalSearchTerm: string;
+  setGlobalSearchTerm: (term: string) => void;
+}
 
-  const effectiveSearchTerm = globalSearchTerm;
-  const isSearchMode = globalSearchTerm.trim() !== '';
+function HomePage({
+  products,
+  categories,
+  globalSearchTerm,
+  setGlobalSearchTerm,
+}: HomePageProps) {
+  const [selectedCategory, setSelectedCategory] =
+    useState<string | null>(null);
+
+  const effectiveSearchTerm = globalSearchTerm.trim();
+
+  const isSearchMode = effectiveSearchTerm !== '';
 
   const filteredProducts = useMemo(() => {
-    return products.filter(product => {
+    const search = effectiveSearchTerm.toLowerCase();
+
+    return products.filter((product) => {
       const name = product.name || '';
-      const matchesSearch = name.toLowerCase().includes(effectiveSearchTerm.toLowerCase());
-      const matchesCategory = selectedCategory === null || product.category === selectedCategory;
+
+      const matchesSearch =
+        search === '' ||
+        name.toLowerCase().includes(search);
+
+      const matchesCategory =
+        selectedCategory === null ||
+        product.category === selectedCategory;
+
       return matchesSearch && matchesCategory;
     });
-  }, [products, effectiveSearchTerm, selectedCategory]);
+  }, [
+    products,
+    effectiveSearchTerm,
+    selectedCategory,
+  ]);
+
+  const selectedCategoryProducts = useMemo(() => {
+    if (!selectedCategory) {
+      return [];
+    }
+
+    return products.filter(
+      (product) => product.category === selectedCategory
+    );
+  }, [products, selectedCategory]);
 
   const handleCategorySelect = (category: string) => {
     setSelectedCategory(category);
@@ -110,31 +151,51 @@ function HomePage({
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
+    <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8 lg:py-8">
+
+      {/* SEARCH RESULTS */}
       {isSearchMode ? (
         <div>
           <div className="mb-4 lg:mb-6">
             <button
               onClick={handleBackFromSearch}
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium text-sm lg:text-base"
+              className="
+                inline-flex
+                items-center
+                text-sm
+                font-medium
+                text-blue-600
+                transition-colors
+                hover:text-blue-800
+                lg:text-base
+              "
             >
-              <ArrowLeft className="w-4 h-4 lg:w-5 lg:h-5 mr-2" />
-              Back to {selectedCategory ? selectedCategory : 'Categories'}
+              <ArrowLeft className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
+              Back to{' '}
+              {selectedCategory
+                ? selectedCategory
+                : 'Categories'}
             </button>
           </div>
 
           <div className="mb-4 lg:mb-6">
-            <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">
+            <h1 className="mb-2 text-2xl font-bold text-gray-900 lg:text-3xl">
               Search Results
+
               {selectedCategory && (
-                <span className="text-lg lg:text-xl font-normal text-gray-600 ml-2">
+                <span className="ml-2 text-lg font-normal text-gray-600 lg:text-xl">
                   in {selectedCategory}
                 </span>
               )}
             </h1>
-            <p className="text-sm lg:text-base text-gray-600">
-              {filteredProducts.length > 0 
-                ? `${filteredProducts.length} product${filteredProducts.length !== 1 ? 's' : ''} found for "${effectiveSearchTerm}"`
+
+            <p className="text-sm text-gray-600 lg:text-base">
+              {filteredProducts.length > 0
+                ? `${filteredProducts.length} product${
+                    filteredProducts.length !== 1
+                      ? 's'
+                      : ''
+                  } found for "${effectiveSearchTerm}"`
                 : `No products found for "${effectiveSearchTerm}"`}
             </p>
           </div>
@@ -142,56 +203,103 @@ function HomePage({
           {filteredProducts.length > 0 ? (
             <ProductList products={filteredProducts} />
           ) : (
-            <div className="text-center py-12">
-              <Package className="w-12 h-12 lg:w-16 lg:h-16 text-gray-300 mx-auto mb-4" />
-              <h3 className="text-base lg:text-lg font-medium text-gray-900 mb-2">No products found</h3>
-              <p className="text-sm lg:text-base text-gray-600 mb-4">
+            <div className="py-12 text-center">
+              <Package className="mx-auto mb-4 h-12 w-12 text-gray-300 lg:h-16 lg:w-16" />
+
+              <h3 className="mb-2 text-base font-medium text-gray-900 lg:text-lg">
+                No products found
+              </h3>
+
+              <p className="mb-4 text-sm text-gray-600 lg:text-base">
                 Try adjusting your search terms or browse our categories
               </p>
+
               <button
                 onClick={handleBackFromSearch}
-                className="inline-flex items-center px-3 lg:px-4 py-2 border border-transparent text-xs lg:text-sm font-medium rounded-md text-blue-600 bg-blue-100 hover:bg-blue-200 transition-colors"
+                className="
+                  inline-flex
+                  items-center
+                  rounded-md
+                  bg-blue-100
+                  px-3
+                  py-2
+                  text-xs
+                  font-medium
+                  text-blue-600
+                  transition-colors
+                  hover:bg-blue-200
+                  lg:px-4
+                  lg:text-sm
+                "
               >
-                <ArrowLeft className="w-4 h-4 mr-2" />
+                <ArrowLeft className="mr-2 h-4 w-4" />
                 Go Back
               </button>
             </div>
           )}
         </div>
+
       ) : selectedCategory ? (
+
+        /* CATEGORY PRODUCTS */
         <div>
           <div className="mb-4 lg:mb-6">
             <button
               onClick={handleBackToHome}
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors font-medium text-sm lg:text-base"
+              className="
+                inline-flex
+                items-center
+                text-sm
+                font-medium
+                text-blue-600
+                transition-colors
+                hover:text-blue-800
+                lg:text-base
+              "
             >
-              <ArrowLeft className="w-4 h-4 lg:w-5 lg:h-5 mr-2" />
+              <ArrowLeft className="mr-2 h-4 w-4 lg:h-5 lg:w-5" />
               Back to Categories
             </button>
           </div>
 
           <div className="mb-4 lg:mb-6">
-            <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">{selectedCategory}</h1>
-            <p className="text-sm lg:text-base text-gray-600">
-              {products.filter(p => p.category === selectedCategory).length} product
-              {products.filter(p => p.category === selectedCategory).length !== 1 ? 's' : ''} available
+            <h1 className="mb-2 text-2xl font-bold text-gray-900 lg:text-3xl">
+              {selectedCategory}
+            </h1>
+
+            <p className="text-sm text-gray-600 lg:text-base">
+              {selectedCategoryProducts.length}{' '}
+              product
+              {selectedCategoryProducts.length !== 1
+                ? 's'
+                : ''}{' '}
+              available
             </p>
           </div>
 
-          <ProductList products={products.filter(p => p.category === selectedCategory)} />
+          <ProductList
+            products={selectedCategoryProducts}
+          />
         </div>
+
       ) : (
+
+        /* HOME */
         <div>
-          <CategoryGrid 
-            categories={categories} 
+          <CategoryGrid
+            categories={categories}
             onCategorySelect={handleCategorySelect}
-            preloadedImages={preloadedImages} // ✅ pass preloaded category images
           />
 
           <div className="mb-4 lg:mb-6">
-            <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2 lg:mb-4">All Products</h2>
-            <p className="text-sm lg:text-base text-gray-600 mb-4 lg:mb-6">
-              {products.length} product{products.length !== 1 ? 's' : ''} available
+            <h2 className="mb-2 text-xl font-bold text-gray-900 lg:text-2xl">
+              All Products
+            </h2>
+
+            <p className="mb-4 text-sm text-gray-600 lg:mb-6 lg:text-base">
+              {products.length} product
+              {products.length !== 1 ? 's' : ''}{' '}
+              available
             </p>
           </div>
 

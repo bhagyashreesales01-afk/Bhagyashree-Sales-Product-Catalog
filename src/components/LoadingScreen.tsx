@@ -1,50 +1,44 @@
 import React from 'react';
 
 interface LoadingScreenProps {
-  progress?: number; // optional progress percentage
+  progress?: number;
 }
 
 const LoadingScreen: React.FC<LoadingScreenProps> = ({ progress = 0 }) => {
   return (
-    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center z-50 animate-fadeIn">
-      <div className="flex items-center justify-center space-x-2 relative mb-4">
-        <div className="absolute -inset-6 bg-blue-100 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-        {[0, 1, 2].map((i) => (
-          <div
-            key={i}
-            className="w-3 h-3 lg:w-4 lg:h-4 bg-blue-600 rounded-full animate-bounce"
-            style={{
-              animationDelay: `${i * 160}ms`,
-              animationDuration: '1.4s',
-            }}
-          ></div>
-        ))}
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
+      <div className="flex flex-col items-center">
+        {/* Loading dots */}
+        <div className="mb-4 flex items-center gap-2">
+          {[0, 1, 2].map((i) => (
+            <span
+              key={i}
+              className="h-3 w-3 rounded-full bg-blue-600 animate-bounce"
+              style={{
+                animationDelay: `${i * 120}ms`,
+                animationDuration: '0.9s',
+              }}
+            />
+          ))}
+        </div>
+
+        {/* Loading text */}
+        <p className="text-sm font-semibold text-blue-600 lg:text-base">
+          Loading products...
+        </p>
+
+        {/* Optional progress */}
+        {progress > 0 && progress < 100 && (
+          <div className="mt-3 h-1 w-32 overflow-hidden rounded-full bg-gray-200">
+            <div
+              className="h-full rounded-full bg-blue-600 transition-all duration-200"
+              style={{
+                width: `${Math.min(100, Math.max(0, progress))}%`,
+              }}
+            />
+          </div>
+        )}
       </div>
-
-      <p className="text-gray-700 text-sm lg:text-base font-semibold bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-shimmer">
-  Product Catalog Loading...
-</p>
-
-
-      {/* <p className="text-gray-500 text-xs lg:text-sm">{progress}%</p> */}
-
-      <style>{`
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.6s ease-in-out forwards;
-        }
-        @keyframes shimmer {
-          0% { background-position: -200% 0; }
-          100% { background-position: 200% 0; }
-        }
-        .animate-shimmer {
-          background-size: 200% auto;
-          animation: shimmer 2s linear infinite;
-        }
-      `}</style>
     </div>
   );
 };

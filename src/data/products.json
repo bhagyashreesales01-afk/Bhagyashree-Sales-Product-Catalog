@@ -228,8 +228,8 @@
     "images": [
       "/assets/products/floor-cleaner/1L-METRO-FRESH-COLOR-PHYNEL.jpg"
     ],
-    "MRP": "85",
-    "Selling rate": "54",
+    "MRP": "99",
+    "Selling rate": "55",
     "Packaging_Size": "1L",
     "pack_type": "Bottle",
     "shelf_life": "24 Months",
@@ -494,7 +494,7 @@
     "Packaging_Size": "1L",
     "pack_type": "Can",
     "MRP": "110",
-    "Selling rate": "30",
+    "Selling rate": "35",
     "Usage/Application": "Domestic",
     "features": [
       "1L Glaze Acid Bathroom Cleaners",
@@ -678,7 +678,7 @@
     "rod_length": "3 Feet",
     "blade_length": "12 inch",
     "color": "Blue",
-    "Selling rate": "122",
+    "Selling rate": "129",
     "product_brand": "Marigold"
   },
   {
@@ -700,7 +700,7 @@
     "features": [
       "Tower Plastic Floor Wiper"
     ],
-    "Selling rate": "81",
+    "Selling rate": "85",
     "product_brand": "Tower"
   },
   {
@@ -719,7 +719,7 @@
     "features": [
       "Volva Floor Wiper"
     ],
-    "Selling rate": "111",
+    "Selling rate": "113",
     "product_brand": "Volva",
     "blade_length": "9 inch"
   },
@@ -879,7 +879,7 @@
     "material": "Wax",
     "MRP": "180",
     "price": "180",
-    "Selling rate": "108",
+    "Selling rate": "110",
     "shelf_life": "",
     "Usage/Application": "Decoration",
     "features": [
@@ -906,7 +906,7 @@
     "material": "Wax",
     "MRP": "60",
     "price": "60",
-    "Selling rate": "36",
+    "Selling rate": "40",
     "shelf_life": "",
     "Usage/Application": "Decoration, Festival",
     "features": [
@@ -934,7 +934,7 @@
     "material": "Wax",
     "MRP": "60",
     "price": "60",
-    "Selling rate": "36",
+    "Selling rate": "40",
     "Usage/Application": "Festival, Decoration",
     "features": [
       "5 inch White Rajdeep Candles"
@@ -952,7 +952,7 @@
   "category": "Brooms",
   "name": "Comfy Plastic Broom",
   "MRP": "215",
-  "Selling rate": "110",
+  "Selling rate": "115",
   "Usage/Application": "Dust sweeping",
   "images": [
     "/assets/products/brooms/comfy-plastic-broom.jpg"
@@ -1134,7 +1134,7 @@
     "rod_length": "3 Feet",
     "mop_head_material": "Cotton",
     "color": "White",
-    "Selling rate": "135",
+    "Selling rate": "138",
     "product_brand": "Galaxy",
     "minimum_order_quantity": "300 Piece"
   },
@@ -1160,7 +1160,7 @@
     "rod_length": "2.5 Feet",
     "mop_head_material": "Cotton",
     "color": "White",
-    "Selling rate": "171",
+    "Selling rate": "175",
     "product_brand": "Easy",
     "minimum_order_quantity": "300 Piece",
     "usage": "Floor Cleaning"
@@ -1192,7 +1192,7 @@
     "rod_length": "3 Feet",
     "mop_head_material": "Cotton",
     "color": "White",
-    "Selling rate": "111",
+    "Selling rate": "125",
     "product_brand": "Kotak",
     "minimum_order_quantity": "300 Piece",
     "usage": "Floor Cleaning"
@@ -1219,7 +1219,7 @@
     "rod_length": "3.5 Feet",
     "mop_head_material": "Cotton",
     "color": "White",
-    "Selling rate": "151",
+    "Selling rate": "153",
     "product_brand": "Clean Mart",
     "minimum_order_quantity": "300 Piece",
     "usage": "Floor Cleaning"
@@ -1273,7 +1273,7 @@
     "rod_length": "2.5 Feet",
     "mop_head_material": "Cotton",
     "color": "White",
-    "Selling rate": "122",
+    "Selling rate": "126",
     "product_brand": "Sony",
     "minimum_order_quantity": "300 Piece",
     "usage": "Floor Cleaning"
@@ -1294,7 +1294,7 @@
       "Washable"
     ],
     "MRP": "185",
-    "Selling rate": "111",
+    "Selling rate": "133",
     "Usage/Application": "Floor Cleaning",
     "pack_contain": "1 piece",
     "mop_head_material": "Cotton"
@@ -1306,7 +1306,7 @@
     "Packaging_Size": "12 pieces",
     "category": "Dusters",
     "color": "Grey",
-    "Selling rate": "19 per piece",
+    "Selling rate": "20 per piece",
     "images": [
       "/assets/products/dusters/Floor-duster-D3.jpg"
     ],
@@ -1323,7 +1323,7 @@
     "Packaging_Size": "12 pieces",
     "category": "Dusters",
     "color": "Light Grey",
-    "Selling rate": "17 per piece",
+    "Selling rate": "18 per piece",
     "images": [
       "/assets/products/dusters/floor-duster-d1.jpg"
     ],
@@ -1340,7 +1340,7 @@
     "Packaging_Size": "12 pieces",
     "category": "Dusters",
     "color": "Light Grey with black strips",
-    "Selling rate": "18 per piece",
+    "Selling rate": "19 per piece",
     "images": [
       "/assets/products/dusters/floor-duster-d2.jpg"
     ],
@@ -1427,7 +1427,7 @@
     "available": true,
     "category": "Dusters",
     "Packaging_Size": "12 pieces",
-    "Selling rate": "19 per piece",
+    "Selling rate": "20 per piece",
     "color": "White base with strip pattern",
     "features": [
       "Premium Cotton Blend: Soft, lightweight, and gentle on glass surfaces",
@@ -1446,7 +1446,7 @@
     "available": true,
     "category": "Dusters",
     "Packaging_Size": "12 pieces",
-    "Selling rate": "40 per piece",
+    "Selling rate": "45 per piece",
     "color": "red,blue,brown,purple",
     "features": [
       "Ultra-fine synthetic fibers for deep cleaning",
@@ -1495,9 +1495,9 @@
     "brand": "Sarvodaya",
     "Packaging_Size": "50gm",
     "pack_contain": "12 pieces",
-    "MRP": "45 per piece",
-    "price": "45 per piece",
-    "Selling rate": "28 per piece",
+    "MRP": "48 per piece",
+    "price": "48 per piece",
+    "Selling rate": "29 per piece",
     "shelf_life": "3 Years",
     "Usage/Application": "Floor",
     "features": [
@@ -1522,8 +1522,8 @@
     "brand": "Sarvodaya",
     "Packaging_Size": "100gm",
     "pack_contain": "6 piece",
-    "MRP": "70 per piece",
-    "price": "70 per piece",
+    "MRP": "75 per piece",
+    "price": "75 per piece",
     "Selling rate": "43 per piece",
     "shelf_life": "2 Years",
     "Usage/Application": "Carrom Board And Dancing Floor",
@@ -1548,8 +1548,8 @@
     "brand": "Sarvodaya",
     "Packaging_Size": "200gm",
     "pack_contain": "",
-    "MRP": "125",
-    "price": "125",
+    "MRP": "135",
+    "price": "135",
     "Selling rate": "82",
     "shelf_life": "2 Years",
     "Usage/Application": "Carrom Board And Dancing Floor",
@@ -1639,7 +1639,7 @@
       "/assets/products/floor-cleaner/500ml-tiger-habit-toilet-cleaner-500x500-new.jpg",
       "/assets/products/floor-cleaner/500ml-tiger-habit-toilet-cleaner-500x500.webp"
     ],
-    "MRP": "110",
+    "MRP": "150",
     "Selling rate": "85",
     "shelf_life": "24 Months",
     "Usage/Application": "Bathroom Cleaning",
@@ -1718,7 +1718,7 @@
       "/assets/products/other-essentials/bathroom-kharata-1697791682563-500x500.webp"
     ],
     "color": "Red",
-    "Selling rate": "52",
+    "Selling rate": "55",
     "MRP": "95",
     "features": [
       "Water proof",
@@ -1739,7 +1739,7 @@
       "/assets/products/other-essentials/zigzag-plastic-broom-500x500.webp"
     ],
     "color": "Red",
-    "Selling rate": "57",
+    "Selling rate": "64",
     "MRP": "110",
     "features": [
       "Water proof",
@@ -1760,7 +1760,7 @@
     "images":["/assets/products/other-essentials/dust-pan-1697791711542-500x500.webp","/assets/products/other-essentials/dust-pan-1697791716610-500x500.webp",
   "/assets/products/other-essentials/dust-pan-1697791719103-500x500.webp"],
   "MRP":"90",
-  "Selling rate":"32"
+  "Selling rate":"40"
   },
   {
     "id":115,

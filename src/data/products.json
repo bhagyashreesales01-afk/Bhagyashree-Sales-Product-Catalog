@@ -1947,6 +1947,26 @@
   "Selling rate":"40"
   },
   {
+    "id": 119,
+    "name": "Classy Dustpan",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Other Essentials",
+    "MRP": "148",
+    "Selling rate": "45",
+    "color": "Blue",
+    "material": "Plastic",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Floor Cleaning",
+    "images": [
+      "/assets/products/other-essentials/Classy-Dustpan.jpeg"
+    ],
+    "features": [
+      "Strong plastic body",
+      "Long handle with hanging hole"
+    ]
+  },
+  {
     "id":115,
     "name":"Rubber Toilet Plunger",
     "available":true,

@@ -1938,7 +1938,7 @@
     "name": "2 in 1 Zig Zag Kharata Plastic Broom",
     "available": true,
     "brand": "Zigzag",
-    "category": "Other Essentials",
+    "category": "Brooms",
     "MRP": "148",
     "Selling rate": "45",
     "color": "Blue",
@@ -2035,6 +2035,30 @@
     "features": [
       "Cleans Toilet surfaces easily",
       "Durable"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Tough Tile Brush",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Other Essentials",
+    "MRP": "110",
+    "Selling rate": "45",
+    "color": "White",
+    "material": "Plastic",
+    "shape": "Rectangular",
+    "Packaging_Type": "Poly Bag",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Tile and Bathroom Floor Cleaning",
+    "images": [
+      "/assets/products/other-essentials/TOUGH-TILE-BRUSH.jpeg"
+    ],
+    "features": [
+      "Hard bristles to scrub tough stains",
+      "Strong plastic body",
+      "Long handle for a firm grip",
+      "Ideal for tiles, bathroom and kitchen surfaces"
     ]
   },
   {

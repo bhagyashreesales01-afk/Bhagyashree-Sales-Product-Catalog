@@ -2062,6 +2062,29 @@
     ]
   },
   {
+    "id": 122,
+    "name": "Cloth Iron Brush",
+    "available": true,
+    "category": "Other Essentials",
+    "MRP": "80",
+    "Selling rate": "45",
+    "color": "Brown & Cream",
+    "material": "Plastic",
+    "shape": "Oval",
+    "Packaging_Type": "Poly Bag",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Cloth and Fabric Cleaning",
+    "images": [
+      "/assets/products/other-essentials/IRON-CLOTH-BRUSH.jpeg"
+    ],
+    "features": [
+      "Stiff bristles for deep fabric cleaning",
+      "Curved grip handle for firm holding",
+      "Ideal for clothes, shoes and upholstery",
+      "Durable plastic body"
+    ]
+  },
+  {
     "id":117,
     "name":"100Gm Sarvodaya Bleaching Powder",
     "brand":"Sarvodaya",
@@ -2072,7 +2095,7 @@
     "images":["/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500 (1).webp",
   "/assets/products/boric-acid-powder/100gm-sarvodaya-bleaching-powder-500x500.webp"],
   "MRP":"30",
-  "Selling rate":"15",
+  "Selling rate":"16",
   "Usage/Application":"Cleaning Floors",
   "Packaging_Size":"100gm",
   "grade_standard":"Analytical Grade"

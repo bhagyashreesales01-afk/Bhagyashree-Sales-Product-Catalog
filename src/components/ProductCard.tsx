@@ -35,7 +35,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       product.id >= 90 &&
       product.id <= 98) ||
     (product.category === 'Other Essentials' &&
-      product.id === 115);
+      (product.id === 115 || product.id === 64));
 
   const handleImageError = (
     event: React.SyntheticEvent<HTMLImageElement>

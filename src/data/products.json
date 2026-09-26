@@ -504,6 +504,50 @@
     ]
   },
   {
+    "id": 22,
+    "name": "1L Tiger Camphor Floor Cleaner ",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "150",
+    "Usage/Application": "Floor Cleaning",
+    "Selling rate": "86",
+    "color": "White",
+    "form": "Liquid",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "Fragrance": "Camphor",
+    "images": [
+      "/assets/products/floor-cleaner/1L-CAMPHOR-TIGER-FLOOR-CLEANER.jpeg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Natural Anti Bactarial"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "1L Tiger Multisurface Cleaner",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "199",
+    "Usage/Application": "Multisurface Cleaning",
+    "color": "Yellow",
+    "form": "Liquid",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "images": [
+      "/assets/products/floor-cleaner/1L-TIGER-MULTISURFACE-CLEANER.jpeg"
+    ],
+    "features": [
+      "Floor",
+      "Surface",
+      "Dish Cleaner"
+    ]
+  },
+  {
     "id": 24,
     "name": "1L Glaze Acid Bathroom Cleaners",
     "available": true,
@@ -859,6 +903,25 @@
       "Scour it well with cloth",
       "wash it well",
       "wipe it to dry"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Bottle Brush",
+    "available": true,
+    "brand": "Micky",
+    "category": "Other Essentials",
+    "Selling rate": "32",
+    "color": "Red and Blue",
+    "material": "Plastic",
+    "shape": "Round",
+    "Packaging_Type": "Poly Bag",
+    "Usage/Application": "Bottle Cleaning",
+    "images": [
+      "/assets/products/other-essentials/Bottle-Brush.jpeg"
+    ],
+    "features": [
+      "Used for cleaning bottles"
     ]
   },
   {
@@ -1322,6 +1385,92 @@
     "Usage/Application": "Floor Cleaning",
     "pack_contain": "1 piece",
     "mop_head_material": "Cotton"
+  },
+  {
+    "id": 88,
+    "name": "Kitty Handle Set Cotton Mop",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Cotton Mops",
+    "images": [
+      "/assets/products/cotton-mop/KITTY-HANDLE-SET.jpeg"
+    ],
+    "color": "Blue",
+    "rod_material": "Stainless Steel",
+    "mop_head_material": "Cotton",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Floor Cleaning",
+    "features": [
+      "Cotton Mop Head",
+      "Wet Mop Type",
+      "Stainless Steel Handle",
+      "Non-Magnetic",
+      "Anti-Rust",
+      "360° Rotator"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Spin Handle Set Cotton Mop",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Cotton Mops",
+    "images": [
+      "/assets/products/cotton-mop/SPIN-HANDLE-SET.jpeg"
+    ],
+    "color": "Sky Blue",
+    "rod_material": "Stainless Steel",
+    "mop_head_material": "Cotton",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Floor Cleaning",
+    "features": [
+      "Cotton Mop Head",
+      "Wet Mop Type",
+      "Stainless Steel Handle",
+      "Non-Magnetic",
+      "Anti-Rust",
+      "360° Rotator"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Roxxy Round Mop",
+    "available": true,
+    "brand": "Roxxy",
+    "category": "Cotton Mops",
+    "images": [
+      "/assets/products/cotton-mop/ROXXY-ROUND-MOP.jpeg"
+    ],
+    "color": "White",
+    "mop_head_material": "Cotton",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Floor Cleaning",
+    "features": [
+      "Cotton Mop Head",
+      "Wet Mop Type",
+      "Round Mop Head",
+      "Excellent Absorbing Capacity"
+    ]
+  },
+  {
+    "id": 209,
+    "name": "Vegas Clip & Fit Mop",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Cotton Mops",
+    "images": [
+      "/assets/products/cotton-mop/VEGAS-COTTON-MOP.jpeg"
+    ],
+    "color": "Grey",
+    "mop_head_material": "Cotton",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Floor Cleaning",
+    "features": [
+      "Cotton Mop Head",
+      "Wet Mop Type",
+      "Clip & Fit Mop",
+      "Excellent Absorbing Capacity"
+    ]
   },
   {
     "id": 92,

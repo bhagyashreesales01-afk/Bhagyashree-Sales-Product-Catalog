@@ -1391,6 +1391,8 @@
     "name": "Kitty Handle Set Cotton Mop",
     "available": true,
     "brand": "Clean Mart",
+    "MRP":"625",
+    "Selling rate":"200",
     "category": "Cotton Mops",
     "images": [
       "/assets/products/cotton-mop/KITTY-HANDLE-SET.jpeg"
@@ -1402,7 +1404,8 @@
     "Usage/Application": "Floor Cleaning",
     "features": [
       "Cotton Mop Head",
-      "Wet Mop Type",
+      "Handle set of bucket Mop",
+  "Wet Mop Type",
       "Stainless Steel Handle",
       "Non-Magnetic",
       "Anti-Rust",
@@ -1415,6 +1418,8 @@
     "available": true,
     "brand": "Clean Mart",
     "category": "Cotton Mops",
+    "MRP":"675",
+    "Selling rate":"300",
     "images": [
       "/assets/products/cotton-mop/SPIN-HANDLE-SET.jpeg"
     ],
@@ -1442,9 +1447,12 @@
       "/assets/products/cotton-mop/ROXXY-ROUND-MOP.jpeg"
     ],
     "color": "White",
+    "MRP":"185",
+    "Selling rate":"122",
     "mop_head_material": "Cotton",
     "pack_contain": "1 piece",
     "Usage/Application": "Floor Cleaning",
+    "rod_material":"Wooden",
     "features": [
       "Cotton Mop Head",
       "Wet Mop Type",
@@ -1461,9 +1469,12 @@
     "images": [
       "/assets/products/cotton-mop/VEGAS-COTTON-MOP.jpeg"
     ],
-    "color": "Grey",
+    "color": "White",
+    "MRP":"260",
+    "Selling rate":"135",
     "mop_head_material": "Cotton",
     "pack_contain": "1 piece",
+    "rod_material":"Wooden",
     "Usage/Application": "Floor Cleaning",
     "features": [
       "Cotton Mop Head",
@@ -1961,6 +1972,27 @@
     "Usage/Application":"Toilet Cleaning",
     "images":["/assets/products/other-essentials/toilet-brush-1697791661208-500x500.webp",
   "/assets/products/other-essentials/toilet-brush-1697791664162-500x500.webp"]
+  },
+  {
+    "id": 107,
+    "name": "Lanser Toilet Brush",
+    "available": true,
+    "brand": "Clean Mart",
+    "category": "Other Essentials",
+    "MRP": "148",
+    "color": "Blue",
+    "material": "Plastic",
+    "shape": "Round",
+    "Packaging_Type": "Poly Bag",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Toilet Cleaning",
+    "images": [
+      "/assets/products/other-essentials/LANSER-TOILET-BRUSH.jpeg"
+    ],
+    "features": [
+      "Cleans Toilet surfaces easily",
+      "Durable"
+    ]
   },
   {
     "id":117,

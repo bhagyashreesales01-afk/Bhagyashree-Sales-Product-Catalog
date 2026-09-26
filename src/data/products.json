@@ -1934,6 +1934,28 @@
     "material": "Plastic"
   },
   {
+    "id": 120,
+    "name": "2 in 1 Zig Zag Kharata Plastic Broom",
+    "available": true,
+    "brand": "Zigzag",
+    "category": "Other Essentials",
+    "MRP": "148",
+    "Selling rate": "45",
+    "color": "Blue",
+    "material": "Plastic",
+    "Packaging_Type": "Poly Bag",
+    "pack_contain": "1 piece",
+    "Usage/Application": "Bathroom Floor Cleaning",
+    "images": [
+      "/assets/products/other-essentials/2-IN-1-ZIG-ZAG-KHARATA-PLASTIC-BROOM.jpeg"
+    ],
+    "features": [
+      "Water proof",
+      "Very Durable",
+      "Rinses off wet surfaces"
+    ]
+  },
+  {
     "id":114,
     "name":"Max Plastic Dust Pan",
     "available":true,

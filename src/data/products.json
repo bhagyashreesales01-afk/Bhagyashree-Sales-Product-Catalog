@@ -479,8 +479,32 @@
       "Natural Anti Bactarial"
     ]
   },
-  {
+    {
     "id": 21,
+    "name": "1L Tiger Lemon Grass Floor Cleaner ",
+    "available": true,
+    "category": "Floor Cleaner",
+    "brand": "Tiger",
+    "MRP": "150",
+    "Usage/Application": "Floor Cleaning",
+    "color": "White",
+    "form": "Liquid",
+    "Packaging_Size": "1L",
+    "pack_type": "Bottle",
+    "Fragrance": "Lemongrass",
+    "images": [
+      "/assets/products/floor-cleaner/1L-LEMONGRASS=TIGER-FLOOR-CLEANER.jpeg"
+    ],
+    "features": [
+      "3 in 1 action ",
+      "100% Eco-friendly",
+      "Fresh Fragrances",
+      "No Rinsing",
+      "Shiny Clean"
+    ]
+  },
+  {
+    "id": 24,
     "name": "1L Glaze Acid Bathroom Cleaners",
     "available": true,
     "brand": "Glaze",
@@ -502,7 +526,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 25,
     "name": "5L Glaze Acid Bathroom Cleaners",
     "available": true,
     "brand": "Glaze",

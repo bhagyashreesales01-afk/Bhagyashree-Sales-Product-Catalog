@@ -792,6 +792,27 @@
     "blade_length": "9 inch"
   },
   {
+    "id": 56,
+    "name": "Kitchen Wiper",
+    "category": "Floor Wiper",
+    "images": [
+      "/assets/products/floor-wiper/KITCHEN-WIPER.jpeg"
+    ],
+    "available": true,
+    "price": "₹75",
+    "MRP": "75",
+    "Selling rate": "35",
+    "color": "White",
+    "material": "Plastic",
+    "Usage/Application": "Kitchen Platform Cleaning",
+    "features": [
+      "Hand-held kitchen wiper for wiping water and spills",
+      "Lightweight and easy to handle",
+      "Durable plastic body",
+      "Keeps kitchen platforms and counters clean"
+    ]
+  },
+  {
     "id": 54,
     "name": "Diamond Ceiling Broom",
     "available": true,

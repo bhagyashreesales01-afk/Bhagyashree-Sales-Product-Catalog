@@ -1055,6 +1055,64 @@
       "/assets/products/candles/5inch-white-rajdeep-candles-500x500 (2).webp"
     ]
   },
+  {
+    "id": 75,
+    "name": "Daily Light White Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "candle_size": "5 inch",
+    "box_contains": "6 piece",
+    "type": "Household",
+    "material": "Paraffin Wax",
+    "color": "White",
+    "MRP": "80",
+    "price": "80",
+    "Selling rate": "50",
+    "Usage/Application": "Household Lighting",
+    "features": [
+      "5 inch White Rajdeep Daily Light Household Candles",
+      "Burn time 4+ hours",
+      "Non dropping",
+      "Export quality",
+      "100% premium paraffin wax",
+      "Lead free wick"
+    ],
+    "Packaging_Type": "Packet",
+    "images": [
+      "/assets/products/candles/Rajdoot-candles-new.jpeg"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Luxora White Candles",
+    "category": "Candles",
+    "form": "Solid",
+    "available": true,
+    "brand": "Rajdeep",
+    "candle_size": "9 inch",
+    "box_contains": "6 piece",
+    "type": "Household",
+    "material": "Paraffin Wax",
+    "color": "White",
+    "MRP": "180",
+    "price": "180",
+    "Selling rate": "100",
+    "Usage/Application": "Household Lighting",
+    "features": [
+      "9 inch White Rajdeep Luxora Premium Household Candles",
+      "Burn time 10+ hours",
+      "Non dropping",
+      "Export quality",
+      "100% premium paraffin wax",
+      "Lead free wick"
+    ],
+    "Packaging_Type": "Packet",
+    "images": [
+      "/assets/products/candles/rajdoot-candles-new-2.jpeg"
+    ]
+  },
 {
   "id": 200,
   "category": "Brooms",
